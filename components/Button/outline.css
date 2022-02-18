@@ -1,0 +1,43 @@
+.btn-error-outline {
+  border: thin solid var(--COLOR-RED-600);
+  color: var(--COLOR-RED-600);
+}
+
+.btn-error-outline:hover {
+  background: var(--COLOR-RED-500);
+  border: thin solid var(--COLOR-RED-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-primary-outline {
+  border: thin solid var(--COLOR-BRAND-DARK);
+  color: var(--COLOR-BRAND-DARK);
+}
+
+.btn-primary-outline:hover {
+  background: var(--COLOR-BRAND);
+  border: thin solid var(--COLOR-BRAND);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-secondary-outline {
+  border: thin solid var(--COLOR-SLATE-600);
+  color: var(--COLOR-SLATE-600);
+}
+
+.btn-secondary-outline:hover {
+  background: var(--COLOR-SLATE-500);
+  border: thin solid var(--COLOR-SLATE-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-success-outline {
+  border: thin solid var(--COLOR-LIME-600);
+  color: var(--COLOR-LIME-600);
+}
+
+.btn-success-outline:hover {
+  background: var(--COLOR-LIME-500);
+  border: thin solid var(--COLOR-LIME-500);
+  color: var(--COLOR-WHITE);
+}
