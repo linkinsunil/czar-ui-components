@@ -1,0 +1,41 @@
+.align-i-ctr {
+  align-items: center;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-2p5 {
+  gap: 2.5rem;
+}
+
+.justify-c-ctr {
+  justify-content: center;
+}
+
+.justify-c-sa {
+  justify-content: space-around;
+}
+
+.justify-c-sb {
+  justify-content: space-between;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 67em) {
+  .align-i-ctr-md {
+    align-items: center;
+  }
+
+  .flex-col-reverse-md {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,9 @@
+/** Translate **/
+
+.translate-y {
+  transition: transform 0.2s;
+}
+
+.translate-y:hover {
+  transform: translateY(-10%);
+}

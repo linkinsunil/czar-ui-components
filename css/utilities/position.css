@@ -1,0 +1,15 @@
+.absolute {
+  position: absolute;
+}
+
+.bottom-2 {
+  bottom: 2rem;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.right-2 {
+  right: 2rem;
+}

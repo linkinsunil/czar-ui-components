@@ -1,0 +1,11 @@
+.border-r-unset {
+  border-radius: unset;
+}
+
+.border-r-0p2 {
+  border-radius: 0.2rem;
+}
+
+.border-r-10 {
+  border-radius: 10rem;
+}

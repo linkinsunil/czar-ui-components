@@ -1,0 +1,35 @@
+.text-gray-500 {
+  color: var(--COLOR-GRAY-500);
+}
+
+.text-lime-500 {
+  color: var(--COLOR-LIME-500);
+}
+
+.text-lime-600 {
+  color: var(--COLOR-LIME-600);
+}
+
+.text-red-500 {
+  color: var(--COLOR-RED-500);
+}
+
+.text-slate-600 {
+  color: var(--COLOR-SLATE-600);
+}
+
+.text-slate-800 {
+  color: var(--COLOR-SLATE-800);
+}
+
+.text-slate-800-hover:hover {
+  color: var(--COLOR-SLATE-800);
+}
+
+.text-brand {
+  color: var(--COLOR-BRAND);
+}
+
+.text-white {
+  color: var(--COLOR-WHITE);
+}
