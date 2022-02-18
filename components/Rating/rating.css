@@ -1,0 +1,10 @@
+.rating-star {
+  color: var(--COLOR-SLATE-300);
+  cursor: pointer;
+  font-size: 4rem;
+  position: relative;
+}
+
+.rating-star.filled {
+  color: var(--COLOR-AMBER-500);
+}
