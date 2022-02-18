@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czar ui</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../app.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container m-auto">
+      <h1 class="text-brand">Czar ui</h1>
+
+      <!-- Input Component Starts -->
+
+      <section class="section-container">
+        <h2 class="section-head">Text area</h2>
+
+        <div class="textarea-container">
+          <textarea
+            class="textarea"
+            placeholder="Enter Your Message"
+          ></textarea>
+
+          <button class="btn btn-primary-solid btn-squared textarea-btn">
+            Share <i class="fas fa-share-square"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-container">
+        <h2 class="section-head">Form Input</h2>
+
+        <form class="form">
+          <input
+            class="input"
+            type="email"
+            name="email-id"
+            placeholder="Enter Your Email"
+          />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            placeholder="Enter Your Password"
+          />
+
+          <button class="btn btn-primary-solid btn-squared">
+            <i class="fas fa-sign-in-alt"></i> Log In
+          </button>
+        </form>
+      </section>
+
+      <section class="section-container">
+        <h2 class="section-head">Error Form Input</h2>
+
+        <form class="form">
+          <span class="msg-error">Enter correct Email and Password</span>
+
+          <input
+            class="input input-error"
+            type="email"
+            name="email-id"
+            placeholder="Enter Your Email"
+          />
+          <input
+            class="input input-error"
+            type="password"
+            name="password"
+            placeholder="Enter Your Password"
+          />
+
+          <button class="btn btn-error-solid btn-squared">
+            <i class="fas fa-sign-in-alt"></i> Log In
+          </button>
+        </form>
+      </section>
+
+      <!-- Input Component Ends -->
+    </div>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

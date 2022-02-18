@@ -1,0 +1,48 @@
+.btn {
+  background: none;
+  border: none;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: var(--COLOR-SLATE-300);
+}
+
+/** Round Button **/
+
+.btn-rounded {
+  border-radius: 3rem;
+}
+
+/** Squared Button **/
+
+.btn-squared {
+  border-radius: 0.5rem;
+}
+
+/** Floating Button **/
+
+.btn-floating {
+  align-items: center;
+  background: var(--COLOR-BRAND);
+  border: medium solid var(--COLOR-BRAND-LIGHT);
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 1rem 0.1rem var(--COLOR-SLATE-600);
+  color: var(--COLOR-WHITE);
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  transition: transform 0.2s;
+  height: 4rem;
+  width: 4rem;
+}
+
+.btn-floating:focus-visible {
+  outline: none;
+}
+
+.btn-floating:hover {
+  transform: translateY(-10%);
+}
