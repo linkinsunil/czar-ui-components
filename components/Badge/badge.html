@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czar ui</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../app.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container m-auto">
+      <h1 class="text-brand">Czar ui</h1>
+
+      <!-- Badge Component Start -->
+
+      <section class="section-container">
+        <h2 class="section-head">Badge on Icons</h2>
+
+        <button class="badge-btn mx-1">
+          <i class="fas fa-home"></i>
+          <span class="badge-count bg-brand">1</span>
+        </button>
+
+        <button class="badge-btn mx-1">
+          <i class="fas fa-bell"></i>
+          <span class="badge-count bg-brand"> 3+ </span>
+        </button>
+
+        <button class="badge-btn mx-1">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge-count bg-amber-500">2</span>
+        </button>
+      </section>
+
+      <section class="section-container">
+        <h2 class="section-head">Badge on Avatars</h2>
+
+        <div class="badge">
+          <img
+            class="avatar"
+            src="../../assets/jpegs/digital-marketing-avatar.png"
+            alt="digital marketing avatar png"
+          />
+
+          <span class="badge-status bg-lime-500"></span>
+        </div>
+
+        <div class="badge">
+          <img
+            class="avatar"
+            src="../../assets/jpegs/specs-avatar.png"
+            alt="specs avatar png"
+          />
+
+          <span class="badge-status bg-red-500"></span>
+        </div>
+
+        <div class="badge">
+          <img
+            class="avatar"
+            src="../../assets/jpegs/man-avatar.png"
+            alt="male avatar png"
+          />
+
+          <span class="badge-status bg-slate-400"></span>
+        </div>
+      </section>
+
+      <!-- Badge Component Ends -->
+    </div>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
