@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czar ui</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../app.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container m-auto">
+      <h1 class="text-brand">Czar ui</h1>
+
+      <!-- Modal Component Starts -->
+
+      <section class="section-container">
+        <h2 class="section-head">Modal</h2>
+
+        <button id="modal-demo-btn" class="btn btn-primary-solid btn-squared">
+          Demo
+        </button>
+
+        <div id="modal-container" class="hide modal-container">
+          <div class="mx-auto modal">
+            <div class="modal-head">Disclaimer</div>
+
+            <p class="modal-body">
+              Convenient and affordable digital access to daily editions of The
+              Newspaper. Read, share and save the digital replica of the print
+              newspaper on your desktop, mobile and tablet.
+            </p>
+
+            <div class="modal-foot">
+              <button
+                class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
+              >
+                Accept
+              </button>
+              <button
+                id="modal-close-btn"
+                class="border-r-0p2 btn btn-primary-outline px-1p5"
+              >
+                Later
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Component Ends -->
+    </div>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
