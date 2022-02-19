@@ -1,0 +1,51 @@
+.toast {
+  background: var(--COLOR-WHITE);
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem var(--COLOR-SLATE-300);
+  width: 30rem;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.toast-cross {
+  border: none;
+  border-radius: 50%;
+  color: var(--COLOR-SLATE-800);
+  height: 2rem;
+  width: 2rem;
+}
+
+.toast-cross:hover {
+  background: var(--COLOR-SLATE-300);
+  color: var(--COLOR-SLATE-600);
+}
+
+.toast-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--COLOR-SLATE-800);
+  margin-bottom: 1rem;
+}
+
+.toast-link {
+  color: var(--COLOR-BRAND-DARK);
+  font-weight: bold;
+}
+
+.toast-link:hover {
+  color: var(--COLOR-BRAND);
+}
+
+.toast-msg {
+  font-size: 1.4rem;
+  color: var(--COLOR-SLATE-700);
+  margin-top: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czar ui</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../app.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container m-auto">
+      <h1 class="text-brand">Czar ui</h1>
+
+      <!-- Toast Component Starts -->
+
+      <section class="section-container">
+        <h2 class="section-head">Toast / Notify / Snackbar</h2>
+
+        <button
+          id="notification-toast-demo-btn"
+          class="btn btn-primary-solid btn-squared"
+        >
+          Demo
+        </button>
+
+        <div id="notification-toast" class="fixed bottom-2 right-2 hide toast">
+          <div class="align-i-ctr flex toast-head">
+            From czar ui
+            <button id="toast-cross-btn" class="ml-auto toast-cross">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <p class="toast-msg lh-1p5">
+            <p class="toast-msg lh-1p5">You've Successfully Subscribed!</p>
+          </p>
+        </div>
+      </section>
+
+      
+
+      <!-- Toast Component Ends -->
+    </div>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
