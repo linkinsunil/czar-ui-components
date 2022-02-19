@@ -1,0 +1,19 @@
+.card-horizontal {
+  border: thin solid var(--COLOR-BRAND-LIGHT);
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+  max-width: 40rem;
+}
+
+.card-horizontal-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-horizontal-img {
+  border-radius: 50%;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem var(--COLOR-SLATE-400);
+  height: 5rem;
+  width: 5rem;
+}
