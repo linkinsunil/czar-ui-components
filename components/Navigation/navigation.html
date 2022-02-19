@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czar ui</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../../app.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container m-auto">
+      <h1 class="text-brand">Czar ui</h1>
+
+      <!-- Navigation Component Starts -->
+
+      <section class="section-container">
+        <h2 class="section-head">Navigation</h2>
+
+        <div class="bg-brand-light nav-container">
+          <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
+            <div class="align-i-ctr flex justify-c-sb">
+              <img
+                class="img-brand-logo"
+                src="../../assets/jpegs/hero-man.png"
+                alt="brand logo"
+              />
+
+              <a
+                class="flex flex-direction-col ml-1"
+                href="https://linkinsunil.github.io"
+                target="_blank"
+              >
+              </a>
+            </div>
+
+            <form
+              class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+            >
+              <input
+                class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+                type="text"
+                placeholder="search ..."
+              />
+
+              <button
+                class="bg-brand-dark-hover btn btn-primary-solid h-100pct mr-n1 py-0p5 px-1p5"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+
+            <div class="align-i-ctr flex justify-c-sb">
+              <button
+                class="btn bg-brand bg-brand-dark-hover text-white border-r-0p2"
+              >
+                Log In
+              </button>
+
+              <a href="#" class="badge-btn mx-2 text-white">
+                <i class="fas fa-heart"></i>
+                <span class="badge-count bg-brand">0</span>
+              </a>
+
+              <a href="#" class="badge-btn mr-1 text-white">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count bg-brand">0</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Navigation Component Ends -->
+    </div>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
