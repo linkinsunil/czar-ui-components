@@ -1,0 +1,52 @@
+.modal {
+  background: var(--COLOR-WHITE);
+  border-radius: 0.5rem;
+  min-width: 35rem;
+  max-width: 45rem;
+  z-index: 2;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: var(--COLOR-OVERLAY);
+  z-index: 1;
+  padding: 4rem 1rem 0;
+}
+
+.modal-cross {
+  border: none;
+  border-radius: 50%;
+  color: var(--COLOR-SLATE-800);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.modal-cross:hover {
+  background: var(--COLOR-SLATE-300);
+  color: var(--COLOR-SLATE-600);
+}
+
+.modal-head {
+  border-bottom: thin solid var(--COLOR-SLATE-300);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+}
+
+.modal-body {
+  line-height: 1.3em;
+  margin: 1rem 0;
+  padding: 1.5rem;
+}
+
+.modal-foot {
+  border-top: thin solid var(--COLOR-SLATE-300);
+  margin: 0.5rem 0;
+  text-align: right;
+  padding: 0.5rem;
+}
