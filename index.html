@@ -4,27 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar ui</title>
+    <title>Czar-UI</title>
 
-    <!-- custom css -->
+    <!-- czar-ui-components cdn -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- czar-ui-documentation css -->
     <link rel="stylesheet" href="app.css" />
-
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
-    <div class="container m-auto">
-      <h1 class="text-brand">Czar ui</h1>
+    <div class="container m-auto p-2">
+      <header class="header">
+        <img
+          class="img-brand-logo"
+          src="/assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <!-- <a class="link-brand mx-1" href="index.html">Czar-UI</a> -->
 
-      <p>Czar UI Component Library</p>
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="pages/introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <h1>
+          Build nice and minimal design applications with
+          <span class="block">Czar-UI</span>
+        </h1>
+
+        <a href="pages/introduction.html">
+          <button class="btn btn-primary-solid btn-squared btn-home">
+            Get Started
+          </button>
+        </a>
+
+        <a
+          href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+          target="_blank"
+        >
+          <button
+            class="btn btn-primary-outline btn-squared btn-home btn-home-outline"
+          >
+            GitHub
+          </button>
+        </a>
+      </main>
     </div>
-
-    <script src="js/main.js"></script>
   </body>
 </html>
