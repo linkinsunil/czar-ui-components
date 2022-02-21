@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar ui</title>
+    <title>Czar-UI | Typography</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="../../app.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/brand-logos/favicon-16x16.png"
+    />
 
     <!-- font awesome -->
     <link
@@ -17,53 +33,268 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- czar-ui-components css -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- czar-ui-documentation css -->
+    <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container m-auto">
-      <h1 class="text-brand">Czar ui</h1>
+    <div class="container documentation m-auto p-2">
+      <!-- Header Documentation Starts -->
 
-      <!-- Typography Starts -->
+      <header class="header header-documentation">
+        <img
+          class="img-brand-logo"
+          src="../../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <!-- <a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
 
-      <section class="section-container">
-        <h2 class="section-head">Typography - Alignment</h2>
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../pages/introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <p class="text-left">Left Alignment</p>
-        <p class="text-center">Center Alignment</p>
-        <p class="text-right">Right Alignment</p>
-      </section>
+      <!-- Header Documentation Ends -->
 
-      <section class="section-container">
-        <h2 class="section-head">Typography - Display Style</h2>
+      <!-- Aside Left Starts -->
 
-        <p class="fs-xs">Extra Small - XS</p>
-        <p class="fs-sm">Small - SM</p>
-        <p class="fs-md">Medium -MD</p>
-        <p class="fs-lg">Large - LG</p>
-        <p class="fs-xl">Extra Large - XL</p>
-        <p class="fs-xxl">Extra Extra Large - XXL</p>
-      </section>
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="../../pages/introduction.html">About</a>
+            </li>
 
-      <section class="section-container">
-        <h2 class="section-head">Typography - Headings</h2>
+            <li class="aside-link">
+              <a class="link link-active" href="../Typography/typography.html"
+                >Typography</a
+              >
+            </li>
 
-        <h1 class="my-0p5">h1.heading</h1>
-        <h2 class="my-0p5">h2.heading</h2>
-        <h3 class="my-0p5">h3.heading</h3>
-        <h4 class="my-0p5">h4.heading</h4>
-        <h5 class="my-0p5">h5.heading</h5>
-        <h6 class="my-0p5">h6.heading</h6>
-      </section>
+            <li class="aside-link">
+              <a class="link" href="../Grid-layout/Grid-layout.html"
+                >Grid Layout</a
+              >
+            </li>
+          </ul>
 
-      <section class="section-container">
-        <h2 class="section-head">Typography - Small and Gray text</h2>
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li class="aside-link">
+              <a class="link" href="../Alert/alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Button/button.html">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Card/card.html">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Image/image.html">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Input/input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../List/list.html">List</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Modal/modal.html">Modal</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Navigation/navigation.html"
+                >Navigation</a
+              >
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Rating/rating.html">Rating</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Toast/toast.html">Toast</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-        <small class="my-0p5">small text</small>
-        <p class="my-0p5 text-gray-500">muted text (gray)</p>
-      </section>
+      <!-- Aside Left Ends -->
 
-      <!-- Typography Ends -->
+      <!-- Main Documentation Starts -->
+
+      <main class="main-documentation">
+        <h1 class="mb-3">Typography</h1>
+
+        <!-- Display Starts -->
+
+        <section class="my-2 section-component" id="display">
+          <h2 class="my-2">Display - Style</h2>
+
+          <div class="component-container pt-2">
+            <p class="fs-xs">Extra Small</p>
+            <p class="fs-sm">Small</p>
+            <p class="fs-md">Medium</p>
+            <p class="fs-lg">Large</p>
+            <p class="fs-xl">Extra Large</p>
+            <p class="fs-xxl">Extra Extra Large</p>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+                &lt;p class="fs-xs">Extra Small&lt;/p>
+                &lt;p class="fs-sm">Small&lt;/p>
+                &lt;p class="fs-md">Medium&lt;/p>
+                &lt;p class="fs-lg">Large&lt;/p>
+                &lt;p class="fs-xl">Extra Large&lt;/p>
+                &lt;p class="fs-xxl">Extra Extra Large&lt;/p>    
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Display Ends -->
+
+        <!-- Headings Starts -->
+
+        <section class="my-2 section-component" id="headings">
+          <h2 class="my-2">Headings</h2>
+
+          <div class="component-container pt-2">
+            <h1 class="my-0p5 fs-3">h1. heading</h1>
+            <h2 class="my-0p5">h2. heading</h2>
+            <h3 class="my-0p5">h3. heading</h3>
+            <h4 class="my-0p5">h4. heading</h4>
+            <h5 class="my-0p5">h5. heading</h5>
+            <h6 class="my-0p5">h6. heading</h6>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+                &lt;h1 class="my-0p5">h1. heading&lt;/h1>
+                &lt;h2 class="my-0p5">h2. heading&lt;/h2>
+                &lt;h3 class="my-0p5">h3. heading&lt;/h3>
+                &lt;h4 class="my-0p5">h4. heading&lt;/h4>
+                &lt;h5 class="my-0p5">h5. heading&lt;/h5>
+                &lt;h6 class="my-0p5">h6. heading&lt;/h6>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Headings Ends -->
+
+        <!-- Alignment Starts -->
+
+        <section class="my-2 section-component" id="alignment">
+          <h2 class="my-2">Alignment</h2>
+
+          <div class="component-container pt-2">
+            <div class="px-2 w-100pct">
+              <p class="text-left">Left Alignment</p>
+              <p class="text-center">Center Alignment</p>
+              <p class="text-right">Right Alignment</p>
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">   
+                &lt;p class="text-left">Left Alignment&lt;/p>
+                &lt;p class="text-center">Center Alignment&lt;/p>
+                &lt;p class="text-right">Right Alignment&lt;/p>              
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Alignment Ends -->
+
+        <!-- Small and Gray Text Starts -->
+
+        <section class="my-2 section-component" id="inline-text">
+          <h2 class="my-2">Small and Gray Text</h2>
+
+          <div class="component-container pt-2">
+            <small class="my-0p5">small text</small>
+            <p class="my-0p5 text-gray-500">muted text (gray)</p>
+
+            <pre class="pre-code">
+              <code class="language-html">   
+          &lt;small class="my-0p5">small text&lt;/small>
+          &lt;p class="my-0p5 text-gray-500">muted text (gray)&lt;/p>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Inline Text Elements Ends -->
+
+        <section class="my-5p5 prev-next-page">
+          <div>
+            <a class="link" href="../../pages/introduction.html">
+              <i class="far fa-arrow-alt-circle-left"></i> About
+            </a>
+          </div>
+          <div class="ml-auto">
+            <a class="link" href="../Grid-layout/Grid-layout.html">
+              Grid Layout <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Main Documentation Ends -->
+
+      <!-- Footer Starts -->
+
+      <footer>
+        <div>
+          <a class="link" href="introduction.html">
+            <i class="far fa-arrow-alt-circle-left"></i> About
+          </a>
+        </div>
+        <div class="ml-auto">
+          <a class="link" href="../Grid-layout/Grid-layout.html">
+            Grid Layout <i class="far fa-arrow-alt-circle-right"></i>
+          </a>
+        </div>
+      </footer>
+
+      <!-- Footer Ends -->
+
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
     </div>
 
-    <script src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

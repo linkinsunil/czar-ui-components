@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar ui</title>
+    <title>Czar-UI | List</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="../../app.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/brand-logos/favicon-16x16.png"
+    />
 
     <!-- font awesome -->
     <link
@@ -17,206 +33,611 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- czar-ui-components css -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- czar-ui-documentation css -->
+    <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container m-auto">
-      <h1 class="text-brand">Czar ui</h1>
+    <div class="container documentation m-auto p-2">
+      <!-- Header Documentation Starts -->
 
-      <!-- Lists Component Starts -->
+      <header class="header header-documentation">
+        <img
+          class="img-brand-logo"
+          src="../../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <!-- <a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
 
-      <!-- Ordered List Starts -->
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../pages/introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-      <section class="section-container">
-        <h2 class="section-head">Ordered List</h2>
+      <!-- Header Documentation Ends -->
 
-        <ol>
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ol>
+      <!-- Aside Left Starts -->
 
-        <ol reversed>
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ol>
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="../../pages/introduction.html">About</a>
+            </li>
 
-        <ol class="list-lower-roman">
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ol>
+            <li class="aside-link">
+              <a class="link" href="../Typography/typography.html"
+                >Typography</a
+              >
+            </li>
 
-        <ol class="list-lower-alpha">
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ol>
-      </section>
+            <li class="aside-link">
+              <a class="link" href="../Grid-layout/Grid-layout.html"
+                >Grid Layout</a
+              >
+            </li>
+          </ul>
 
-      <!-- Ordered List Ends -->
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li class="aside-link">
+              <a class="link" href="../Alert/alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Button/button.html">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Card/card.html">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Image/image.html">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Input/input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link link-active" href="../List/list.html">List</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Modal/modal.html">Modal</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Navigation/navigation.html"
+                >Navigation</a
+              >
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Rating/rating.html">Rating</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Toast/toast.html">Toast</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-      <!-- Unordered List Starts -->
+      <!-- Aside Left Ends -->
 
-      <section class="section-container">
-        <h2 class="section-head">Unordered List</h2>
+      <!-- Main Documentation Starts -->
 
-        <ul class="list-disc">
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ul>
+      <main class="main-documentation">
+        <h1 class="mb-3">List</h1>
+        <p class="main-text">
+          List component is used for listing items in web-app.
+        </p>
 
-        <ul class="list-circle">
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ul>
+        <!-- Numbered List Starts -->
 
-        <ul class="list-square">
-          <li>Fruit</li>
-          <li>Vegetable</li>
-          <li>Milk</li>
-        </ul>
-      </section>
+        <section class="my-2 section-component" id="numbered">
+          <h2 class="my-2">Numbered List</h2>
 
-      <!-- Unordered List Ends -->
+          <div class="component-container pt-2">
+            <ol>
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ol>
 
-      <!-- Category Checkbox List Starts -->
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol>
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ol>
+              </code>
+            </pre>
+          </div>
+        </section>
 
-      <section class="section-container">
-        <h2 class="section-head">Category Checkbox List</h2>
+        <!-- Numbered List Ends -->
 
-        <ul>
-          <li class="my-0p5">
-            <label class="cursor-ptr" for="bobbleheads">
-              <input
-                class="cursor-ptr mr-1"
-                type="checkbox"
-                name="category"
-                id="bobbleheads"
-              />
-              Fruit</label
+        <!-- Reversed List Starts -->
+
+        <section class="my-2 section-component" id="reversed">
+          <h2 class="my-2">Reversed List</h2>
+
+          <div class="component-container pt-2">
+            <ol reversed>
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol reversed>
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ol>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Reversed List Ends -->
+
+        <!-- Lower Roman List Starts -->
+
+        <section class="my-2 section-component" id="lower-roman">
+          <h2 class="my-2">Lower Roman List</h2>
+
+          <div class="component-container pt-2">
+            <ol class="list-lower-roman">
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol class="list-lower-roman">
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ol>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Lower Roman List Ends -->
+
+        <!-- Lower Alpha List Starts -->
+
+        <section class="my-2 section-component" id="lower-alpha">
+          <h2 class="my-2">Lower Alpha List</h2>
+
+          <div class="component-container pt-2">
+            <ol class="list-lower-alpha">
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ol>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ol class="list-lower-alpha">
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ol>
+               </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Lower Alpha List Ends -->
+
+        <!-- Disc List Starts -->
+
+        <section class="my-2 section-component" id="disc">
+          <h2 class="my-2">Disc List</h2>
+
+          <div class="component-container pt-2">
+            <ul class="list-disc">
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul class="list-disc">
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Disc List Ends -->
+
+        <!-- Circle List Starts -->
+
+        <section class="my-2 section-component" id="circle">
+          <h2 class="my-2">Circle List</h2>
+
+          <div class="component-container pt-2">
+            <ul class="list-circle">
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul class="list-circle">
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Circle List Ends -->
+
+        <!-- Square List Starts -->
+
+        <section class="my-2 section-component" id="square">
+          <h2 class="my-2">Square List</h2>
+
+          <div class="component-container pt-2">
+            <ul class="list-square">
+              <li>Fruit</li>
+              <li>Vegetable</li>
+              <li>Milk</li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul class="list-square">
+              &lt;li>Fruit&lt;/li>
+              &lt;li>Vegetable&lt;/li>
+              &lt;li>Milk&lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Square List Ends -->
+
+        <!-- Category Checkbox List Starts -->
+
+        <section class="my-2 section-component" id="category-checkbox">
+          <h2 class="my-2">Category Checkbox List</h2>
+
+          <div class="component-container pt-2">
+            <ul>
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="fruit">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="fruit"
+                  />
+                  Fruit</label
+                >
+              </li>
+
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="vegetable">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="vegetable"
+                  />
+                  Vegetable</label
+                >
+              </li>
+
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="milk">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="milk"
+                  />
+                  Milk</label
+                >
+              </li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">
+          &lt;ul>
+              &lt;li class="my-0p5 ml-1">
+                &lt;label class="cursor-ptr" for="fruit">
+                  &lt;input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="fruit"
+                  />
+                  Fruit
+                &lt;/label>
+              &lt;/li>
+
+              &lt;li class="my-0p5 ml-1">
+                &lt;label class="cursor-ptr" for="vegetable">
+                  &lt;input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="vegetable"
+                  />
+                  Vegetable
+                &lt;/label>
+              &lt;/li>
+
+              &lt;li class="my-0p5 ml-1">
+                &lt;label class="cursor-ptr" for="milk">
+                  &lt;input
+                    class="cursor-ptr mr-1"
+                    type="checkbox"
+                    name="category"
+                    id="milk"
+                  />
+                  Milk
+                &lt;/label>
+              &lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Category Checkbox List Ends -->
+
+        <!-- Radio List Starts -->
+
+        <section class="my-2 section-component" id="new-radio">
+          <h2 class="my-2">Radio List</h2>
+
+          <div class="component-container pt-2">
+            <ul>
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="low-to-high">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="radio"
+                    name="item-status"
+                    id="new"
+                  />
+                  New</label
+                >
+              </li>
+
+              <li class="my-0p5 ml-1">
+                <label class="cursor-ptr" for="renewed">
+                  <input
+                    class="cursor-ptr mr-1"
+                    type="radio"
+                    name="item-status"
+                    id="high-to-low"
+                  />
+                  Renewed</label
+                >
+              </li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">
+          &lt;ul>
+              &lt;li class="my-0p5 ml-1">
+                  &lt;label class="cursor-ptr" for="new">
+                    &lt;input
+                        class="cursor-ptr mr-1"
+                        type="radio"
+                        name="item-status"
+                        id="new"
+                    />
+                    New
+                  &lt;/label>
+              &lt;/li>
+    
+              &lt;li class="my-0p5 ml-1">
+                  &lt;label class="cursor-ptr" for="renewed">
+                    &lt;input
+                        class="cursor-ptr mr-1"
+                        type="radio"
+                        name="item-status"
+                        id="renewed"
+                    />
+                    Renewed
+                  &lt;/label>
+              &lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Radio List Ends -->
+
+        <!-- Notification Stacked List Starts -->
+
+        <section class="my-2 section-component" id="notification-stacked">
+          <h2 class="my-2">Notification Stack</h2>
+
+          <div class="component-container pt-2">
+            <ul
+              class="border-thin border-solid border-slate-500 border-r-0p2 w-24"
             >
-          </li>
+              <li
+                class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+              >
+                <a class="flex text-slate-800 fw-bold" href="#"
+                  >New Message 12
+                  <span class="ml-auto text-slate-600 translate-y"
+                    ><i class="fas fa-times"></i></span
+                ></a>
+              </li>
 
-          <li class="my-0p5">
-            <label class="cursor-ptr" for="mens-clothing">
-              <input
-                class="cursor-ptr mr-1"
-                type="checkbox"
-                name="category"
-                id="mens-clothing"
-              />
-              Vegetable</label
+              <li
+                class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+              >
+                <a class="flex text-slate-800 fw-bold" href="#"
+                  >New Notification 53
+                  <span class="ml-auto text-slate-600 translate-y"
+                    ><i class="fas fa-times"></i></span
+                ></a>
+              </li>
+
+              <li
+                class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                <a class="flex text-slate-800 fw-bold" href="#"
+                  >Checked
+                  <span class="ml-auto text-lime-500 translate-y"
+                    ><i class="fas fa-check"></i></span
+                ></a>
+              </li>
+
+              <li
+                class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                <a class="flex text-slate-800 fw-bold" href="#"
+                  >Checked
+                  <span class="ml-auto text-lime-500 translate-y"
+                    ><i class="fas fa-check"></i></span
+                ></a>
+              </li>
+            </ul>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;ul
+              class="border-thin border-solid border-slate-500 border-r-0p2 w-24"
             >
-          </li>
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+                >
+                  &lt;a class="flex text-slate-800 fw-bold" href="#">
+                      New Message 12
+                      &lt;span class="ml-auto text-slate-600 translate-y">
+                      &lt;i class="fas fa-times">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
 
-          <li class="my-0p5">
-            <label class="cursor-ptr" for="kids-clothing">
-              <input
-                class="cursor-ptr mr-1"
-                type="checkbox"
-                name="category"
-                id="kids-clothing"
-              />
-              Milk</label
-            >
-          </li>
-        </ul>
-      </section>
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
+              >
+                  &lt;a class="flex text-slate-800 fw-bold" href="#">
+                      New Notification 53
+                      &lt;span class="ml-auto text-slate-600 translate-y">
+                      &lt;i class="fas fa-times">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
 
-      <!-- Category Checkbox List Ends -->
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                  &lt;a class="flex text-slate-800 fw-bold" href="#">
+                      Checked
+                      &lt;span class="ml-auto text-lime-500 translate-y">
+                      &lt;i class="fas fa-check">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
 
-      <!-- Radio List Starts -->
+              &lt;li
+                  class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
+              >
+                  &lt;a class="flex text-slate-800 fw-bold" href="#">
+                      Checked
+                      &lt;span class="ml-auto text-lime-500 translate-y">
+                      &lt;i class="fas fa-check">&lt;/i>&lt;/span>
+                  &lt;/a>
+              &lt;/li>
+          &lt;/ul>
+              </code>
+            </pre>
+          </div>
+        </section>
 
-      <section class="section-container">
-        <h2 class="section-head">Radio List</h2>
+        <!-- Notification Stacked List Ends -->
 
-        <ul>
-          <li class="my-0p5">
-            <label class="cursor-ptr" for="low-to-high">
-              <input
-                class="cursor-ptr mr-1"
-                type="radio"
-                name="price"
-                id="low-to-high"
-              />
-              New</label
-            >
-          </li>
+        <section class="my-5p5 prev-next-page">
+          <div>
+            <a class="link" href="../Input/input.html">
+              <i class="far fa-arrow-alt-circle-left"></i> Input
+            </a>
+          </div>
+          <div class="ml-auto">
+            <a class="link" href="../Modal/modal.html">
+              Modal <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+          </div>
+        </section>
+      </main>
 
-          <li class="my-0p5">
-            <label class="cursor-ptr" for="high-to-low">
-              <input
-                class="cursor-ptr mr-1"
-                type="radio"
-                name="price"
-                id="high-to-low"
-              />
-              Renewed</label
-            >
-          </li>
-        </ul>
-      </section>
+      <!-- Main Documentation Ends -->
 
-      <!-- Radio List Ends -->
+      <!-- Footer Starts -->
 
-      <!-- Notification Stacked List Starts -->
+      <footer>
+        <div>
+          <a class="link" href="input.html">
+            <i class="far fa-arrow-alt-circle-left"></i> Input
+          </a>
+        </div>
+        <div class="ml-auto">
+          <a class="link" href="modal.html">
+            Modal <i class="far fa-arrow-alt-circle-right"></i>
+          </a>
+        </div>
+      </footer>
 
-      <section class="section-container">
-        <h2 class="section-head">Notification Stack</h2>
+      <!-- Footer Ends -->
 
-        <ul
-          class="border-thin border-solid border-slate-500 border-r-0p2 max-w-20"
-        >
-          <li
-            class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
-          >
-            <a class="flex text-slate-800 fw-bold" href="#"
-              >New Message 12
-              <span class="ml-auto text-slate-600 translate-y"
-                ><i class="fas fa-times"></i></span
-            ></a>
-          </li>
-
-          <li
-            class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
-          >
-            <a class="flex text-slate-800 fw-bold" href="#"
-              >New Notification 53
-              <span class="ml-auto text-slate-600 translate-y"
-                ><i class="fas fa-times"></i></span
-            ></a>
-          </li>
-
-          <li
-            class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
-          >
-            <a class="flex text-slate-600 fw-bold" href="#"
-              >Checked!
-              <span class="ml-auto text-lime-500 translate-y"
-                ><i class="fas fa-check"></i></span
-            ></a>
-          </li>
-
-          <li
-            class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
-          >
-            <a class="flex text-slate-600 fw-bold" href="#"
-              >Checked!
-              <span class="ml-auto text-lime-500 translate-y"
-                ><i class="fas fa-check"></i></span
-            ></a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Notification Stacked List Ends -->
-
-      <!-- Lists Component Ends -->
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
     </div>
 
-    <script src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

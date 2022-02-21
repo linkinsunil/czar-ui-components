@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar ui</title>
+    <title>Czar-UI | Image</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="../../app.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/brand-logos/favicon-16x16.png"
+    />
 
     <!-- font awesome -->
     <link
@@ -17,61 +33,263 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- czar-ui-components css -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- czar-ui-documentation css -->
+    <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container m-auto">
-      <h1 class="text-brand">Czar ui</h1>
+    <div class="container documentation m-auto p-2">
+      <!-- Header Documentation Starts -->
 
-      <!-- Image Component Starts -->
-
-      <section class="section-container">
-        <h2 class="section-head">Round Image</h2>
-
+      <header class="header header-documentation">
         <img
-          class="img img-round mx-1"
-          src="../../assets/jpegs/ronaldo.png"
-          alt="ronaldo jpg"
+          class="img-brand-logo"
+          src="../../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
         />
-        <img
-          class="img img-round mx-1"
-          src="../../assets/jpegs/cr7.png"
-          alt="cr7 jpg"
-        />
-      </section>
+        <!-- <a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
 
-      <section class="section-container">
-        <h2 class="section-head">Square Image</h2>
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../pages/introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <img
-          class="img img-square mx-1"
-          src="../../assets/jpegs/ronaldo.png"
-          alt="ronaldo jpg"
-        />
-        <img
-          class="img img-square mx-1"
-          src="../../assets/jpegs/cr7.png"
-          alt="cr7 jpg"
-        />
-      </section>
+      <!-- Header Documentation Ends -->
 
-      <section class="section-container">
-        <h2 class="section-head">Responsive Image</h2>
-        <p class="section-text">
-          Resize your browser window to check responsiveness.
+      <!-- Aside Left Starts -->
+
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="../../pages/introduction.html">About</a>
+            </li>
+
+            <li class="aside-link">
+              <a class="link" href="../Typography/typography.html"
+                >Typography</a
+              >
+            </li>
+
+            <li class="aside-link">
+              <a class="link" href="../Grid-layout/Grid-layout.html"
+                >Grid Layout</a
+              >
+            </li>
+          </ul>
+
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li class="aside-link">
+              <a class="link" href="../Alert/alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Button/button.html">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Card/card.html">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link link-active" href="../Image/image.html">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Input/input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../List/list.html">List</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Modal/modal.html">Modal</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Navigation/navigation.html"
+                >Navigation</a
+              >
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Rating/rating.html">Rating</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Toast/toast.html">Toast</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Aside Left Ends -->
+
+      <!-- Main Documentation Starts -->
+
+      <main class="main-documentation">
+        <h1 class="mb-3">Image</h1>
+        <p class="main-text">
+          Image can be used to display different sized and shaped picture on the
+          web-app.
         </p>
 
-        <div class="img-container">
-          <img
-            class="img-responsive"
-            src="../../assets/jpegs/ronaldo-large-1.jpg"
-            alt="ronaldo large jpg"
-          />
-        </div>
-      </section>
+        <!-- Round Image Starts -->
 
-      <!-- Image Component Ends -->
+        <section class="my-2 section-component" id="img-round">
+          <h2 class="my-2">Round Image</h2>
+
+          <div class="component-container pt-2">
+            <div>
+              <img
+                class="img img-round mx-1"
+                src="../../assets/jpegs/ronaldo.png"
+                alt="unsplash do something great jpg"
+              />
+              <img
+                class="img img-round mx-1"
+                src="../../assets/jpegs/cr7.png"
+                alt="unsplash stanlee jpg"
+              />
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;img class="img img-round mx-1" src="..." alt="..."/>
+          &lt;img class="img img-round mx-1" src="..." alt="..."/>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Round Image Ends -->
+
+        <!-- Square Image Starts -->
+
+        <section class="my-2 section-component" id="img-square">
+          <h2 class="my-2">Square Image</h2>
+
+          <div class="component-container pt-2">
+            <div>
+              <img
+                class="img img-square mx-1"
+                src="../../assets/jpegs/ronaldo.png"
+                alt="unsplash stanlee jpg"
+              />
+              <img
+                class="img img-square mx-1"
+                src="../../assets/jpegs/cr7.png"
+                alt="unsplash do something great jpg"
+              />
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;img class="img img-square mx-1" src="..." alt="..."/>
+          &lt;img class="img img-square mx-1" src="..." alt="..."/>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Square Image Ends -->
+
+        <!-- Responsive Image Starts -->
+
+        <section class="my-2 section-component" id="img-responsive">
+          <h2 class="my-2">Responsive Image</h2>
+          <p class="my-2 section-text">
+            Resize your browser window, to see its responsiveness.
+          </p>
+
+          <div class="component-container pt-2">
+            <div class="img-container">
+              <!-- .img-container {max-width: 52vw;} -->
+
+              <img
+                class="img-responsive"
+                src="../../assets/jpegs/ronaldo-large-1.jpg"
+                alt="unsplash stanlee jpg"
+              />
+            </div>
+
+            <pre class="pre-code">
+                <code class="language-html">  
+            &lt;div class="img-container">
+              &lt;img class="img-responsive" src="..." alt="..."/>
+            &lt;div>
+                </code>
+              </pre>
+          </div>
+        </section>
+
+        <!-- Square Image Ends -->
+
+        <section class="my-5p5 prev-next-page">
+          <div>
+            <a class="link" href="../Card/card.html">
+              <i class="far fa-arrow-alt-circle-left"></i> Card
+            </a>
+          </div>
+          <div class="ml-auto">
+            <a class="link" href="../Input/input.html">
+              Input <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Main Documentation Ends -->
+
+      <!-- Footer Starts -->
+
+      <footer>
+        <div>
+          <a class="link" href="../Card/card.html">
+            <i class="far fa-arrow-alt-circle-left"></i> Card
+          </a>
+        </div>
+        <div class="ml-auto">
+          <a class="link" href="../Input/input.html">
+            Input <i class="far fa-arrow-alt-circle-right"></i>
+          </a>
+        </div>
+      </footer>
+
+      <!-- Footer Ends -->
+
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
     </div>
 
-    <script src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

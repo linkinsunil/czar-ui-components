@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar ui</title>
+    <title>Czar-UI | Badge</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="../../app.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/brand-logos/favicon-16x16.png"
+    />
 
     <!-- font awesome -->
     <link
@@ -17,69 +33,277 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- czar-ui-components css -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- czar-ui-documentation css -->
+    <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container m-auto">
-      <h1 class="text-brand">Czar ui</h1>
+    <div class="container documentation m-auto p-2">
+      <!-- Header Documentation Starts -->
 
-      <!-- Badge Component Start -->
+      <header class="header header-documentation">
+        <img
+          class="img-brand-logo"
+          src="../../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <!-- <a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
 
-      <section class="section-container">
-        <h2 class="section-head">Badge on Icons</h2>
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../pages/introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a
+                class="link"
+                href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <button class="badge-btn mx-1">
-          <i class="fas fa-home"></i>
-          <span class="badge-count bg-brand">1</span>
-        </button>
+      <!-- Header Documentation Ends -->
 
-        <button class="badge-btn mx-1">
-          <i class="fas fa-bell"></i>
-          <span class="badge-count bg-brand"> 3+ </span>
-        </button>
+      <!-- Aside Left Starts -->
 
-        <button class="badge-btn mx-1">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="badge-count bg-amber-500">2</span>
-        </button>
-      </section>
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="../../pages/introduction.html">About</a>
+            </li>
 
-      <section class="section-container">
-        <h2 class="section-head">Badge on Avatars</h2>
+            <li class="aside-link">
+              <a class="link" href="../Typography/typography.html"
+                >Typography</a
+              >
+            </li>
 
-        <div class="badge">
-          <img
-            class="avatar"
-            src="../../assets/jpegs/digital-marketing-avatar.png"
-            alt="digital marketing avatar png"
-          />
+            <li class="aside-link">
+              <a class="link" href="../Grid-layout/Grid-layout.html"
+                >Grid Layout</a
+              >
+            </li>
+          </ul>
 
-          <span class="badge-status bg-lime-500"></span>
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li class="aside-link">
+              <a class="link" href="../Alert/alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link link-active" href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Button/button.html">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Card/card.html">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Image/image.html">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Input/input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../List/list.html">List</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Modal/modal.html">Modal</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Navigation/navigation.html"
+                >Navigation</a
+              >
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Rating/rating.html">Rating</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Toast/toast.html">Toast</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Aside Left Ends -->
+
+      <!-- Main Documentation Starts -->
+
+      <main class="main-documentation">
+        <h1 class="mb-3">Badge</h1>
+        <p class="main-text">
+          Badges are used to show status of the user (online, or offline). It
+          can also be used as notification counter badge.
+        </p>
+
+        <!-- Badge on Icons Starts -->
+
+        <section class="my-2 section-component" id="badge-icon">
+          <h2 class="my-2">Badge on Icons</h2>
+
+          <div class="component-container pt-2">
+            <div>
+              <button class="badge-btn mx-1">
+                <i class="fas fa-home"></i>
+                <span class="badge-count bg-brand">1</span>
+              </button>
+
+              <button class="badge-btn mx-1">
+                <i class="fas fa-bell"></i>
+                <span class="badge-count bg-brand"> 3+ </span>
+              </button>
+
+              <button class="badge-btn mx-1">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count bg-amber-500">2</span>
+              </button>
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;button class="badge-btn mx-1">
+            &lt;i class="fas fa-home">&lt;/i>
+            &lt;span class="badge-count bg-brand">1&lt;/span>
+          &lt;/button>
+  
+          &lt;button class="badge-btn mx-1">
+            &lt;i class="fas fa-shopping-cart">&lt;/i>
+            &lt;span class="badge-count bg-brand">3+&lt;/span>
+          &lt;/button>
+  
+          &lt;button class="badge-btn mx-1">
+            &lt;i class="fas fa-bell">&lt;/i>
+            &lt;span class="badge-count bg-amber-500">2&lt;/span>
+          &lt;/button>            
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Badge on Icons Ends -->
+
+        <!-- Badge on Avatars Starts -->
+
+        <section class="my-2 section-component" id="badge-avatar">
+          <h2 class="my-2">Badge on Avatars</h2>
+
+          <div class="component-container pt-2">
+            <div class="badge">
+              <img
+                class="avatar"
+                src="../../assets/jpegs/digital-marketing-avatar.png"
+                alt="digital marketing avatar png"
+              />
+
+              <span class="badge-status bg-lime-500"></span>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar"
+                src="../../assets/jpegs/male-avatar.png"
+                alt="male avatar png"
+              />
+
+              <span class="badge-status bg-red-500"></span>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar"
+                src="../../assets/jpegs/man-avatar.png"
+                alt="male avatar png"
+              />
+
+              <span class="badge-status bg-slate-400"></span>
+            </div>
+
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;div class="badge">
+            &lt;img class="avatar" src="..." alt="..." />        
+            &lt;span class="badge-status bg-lime-500">&lt;/span>
+          &lt;/div>
+
+          &lt;div class="badge">
+            &lt;img class="avatar" src="..." alt="..." />        
+            &lt;span class="badge-status bg-red-500">&lt;/span>
+          &lt;/div>
+  
+          &lt;div class="badge">
+            &lt;img class="avatar" src="..." alt="..." />
+            &lt;span class="badge-status bg-slate-400">&lt;/span>
+          &lt;/div>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <!-- Badge on Avatars Ends -->
+
+        <section class="my-5p5 prev-next-page">
+          <div>
+            <a class="link" href="../Avatar/avatar.html">
+              <i class="far fa-arrow-alt-circle-left"></i> Avatar
+            </a>
+          </div>
+          <div class="ml-auto">
+            <a class="link" href="../Button/button.html">
+              Button <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Main Documentation Ends -->
+
+      <!-- Footer Starts -->
+
+      <footer>
+        <div>
+          <a class="link" href="avatar.html">
+            <i class="far fa-arrow-alt-circle-left"></i> Avatar
+          </a>
         </div>
-
-        <div class="badge">
-          <img
-            class="avatar"
-            src="../../assets/jpegs/specs-avatar.png"
-            alt="specs avatar png"
-          />
-
-          <span class="badge-status bg-red-500"></span>
+        <div class="ml-auto">
+          <a class="link" href="button.html">
+            Button <i class="far fa-arrow-alt-circle-right"></i>
+          </a>
         </div>
+      </footer>
 
-        <div class="badge">
-          <img
-            class="avatar"
-            src="../../assets/jpegs/man-avatar.png"
-            alt="male avatar png"
-          />
+      <!-- Footer Ends -->
 
-          <span class="badge-status bg-slate-400"></span>
-        </div>
-      </section>
-
-      <!-- Badge Component Ends -->
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
     </div>
 
-    <script src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
