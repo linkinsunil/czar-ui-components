@@ -34,22 +34,6 @@
   margin: 1.2rem 0.2rem;
 }
 
-.aside-right {
-  grid-area: aside-right;
-}
-
-.aside-right-container {
-  margin: 1rem 2rem 3rem 1rem;
-}
-
-.aside-right-list a {
-  color: var(--COLOR-SLATE-700);
-}
-
-.aside-right-list a:hover {
-  color: var(--COLOR-BRAND);
-}
-
 /** Component Container **/
 
 .component-container {
@@ -64,6 +48,13 @@
 
 .primary-btn-container {
   text-align: center;
+}
+
+/** Prev-Next Page **/
+
+.prev-next-page {
+  display: flex;
+  justify-content: space-between;
 }
 
 /** Footer **/
