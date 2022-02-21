@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar ui</title>
+    <title>Czar-UI | Navigation</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="../../app.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/brand-logos/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/brand-logos/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/brand-logos/favicon-16x16.png"
+    />
 
     <!-- font awesome -->
     <link
@@ -17,74 +33,290 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- highlight.js cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+
+    <!-- czar-ui-components css -->
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <!-- czar-ui-documentation css -->
+    <link rel="stylesheet" href="../../app.css" />
   </head>
   <body>
-    <div class="container m-auto">
-      <h1 class="text-brand">Czar ui</h1>
+    <div class="container documentation m-auto p-2">
+      <!-- Header Documentation Starts -->
 
-      <!-- Navigation Component Starts -->
+      <header class="header header-documentation">
+        <img
+          class="img-brand-logo"
+          src="../../assets/brand-logos/brand-logo.png"
+          alt="brand logo png"
+        />
+        <!-- <a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
 
-      <section class="section-container">
-        <h2 class="section-head">Navigation</h2>
-
-        <div class="bg-brand-light nav-container">
-          <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
-            <div class="align-i-ctr flex justify-c-sb">
-              <img
-                class="img-brand-logo"
-                src="../../assets/jpegs/hero-man.png"
-                alt="brand logo"
-              />
-
+        <nav class="ml-auto">
+          <ul>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../index.html">Home</a>
+            </li>
+            <li class="inline-block mx-1">
+              <a class="link" href="../../pages/introduction.html">Docs</a>
+            </li>
+            <li class="inline-block mx-1">
               <a
-                class="flex flex-direction-col ml-1"
-                href="https://linkinsunil.github.io"
+                class="link"
+                href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
                 target="_blank"
+                >GitHub</a
               >
-              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Header Documentation Ends -->
+
+      <!-- Aside Left Starts -->
+
+      <aside class="aside-left">
+        <nav class="aside-container aside-left-container">
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Getting Started</h3>
+            <li class="aside-link">
+              <a class="link" href="../../pages/introduction.html">About</a>
+            </li>
+
+            <li class="aside-link">
+              <a class="link" href="../Typography/typography.html"
+                >Typography</a
+              >
+            </li>
+
+            <li class="aside-link">
+              <a class="link" href="../Grid-layout/Grid-layout.html"
+                >Grid Layout</a
+              >
+            </li>
+          </ul>
+
+          <ul class="aside-left-list mb-3">
+            <h3 class="my-1p5">Components</h3>
+            <li class="aside-link">
+              <a class="link" href="../Alert/alert.html">Alert</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Avatar/avatar.html">Avatar</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Badge/badge.html">Badge</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Button/button.html">Button</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Card/card.html">Card</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Image/image.html">Image</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Input/input.html">Input</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../List/list.html">List</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Modal/modal.html">Modal</a>
+            </li>
+            <li class="aside-link">
+              <a class="link link-active" href="../Navigation/navigation.html"
+                >Navigation</a
+              >
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Rating/rating.html">Rating</a>
+            </li>
+            <li class="aside-link">
+              <a class="link" href="../Toast/toast.html">Toast</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Aside Left Ends -->
+
+      <!-- Main Documentation Starts -->
+
+      <main class="main-documentation">
+        <h1 class="mb-3">Navigation</h1>
+        <p class="main-text">
+          Navigation can be used to give the user facility to navigate between
+          different pages.
+        </p>
+
+        <!-- Navigation Component Starts -->
+
+        <section class="my-2 section-component" id="desktop-variation-one">
+          <h2 class="my-2">Navigation</h2>
+
+          <div class="component-container pt-2">
+            <div class="bg-brand-light nav-container">
+              <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
+                <div class="align-i-ctr flex justify-c-sb">
+                  <img
+                    class="img-brand-logo"
+                    src="../../assets/jpegs/hero-man.png"
+                    alt="brand logo"
+                  />
+
+                  <a
+                    class="flex flex-direction-col ml-1"
+                    href="https://linkinsunil.github.io"
+                    target="_blank"
+                  >
+                  </a>
+                </div>
+
+                <form
+                  class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+                >
+                  <input
+                    class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+                    type="text"
+                    placeholder="search ..."
+                  />
+
+                  <button
+                    class="bg-brand-dark-hover btn btn-primary-solid h-100pct mr-n1 py-0p5 px-1p5"
+                    type="submit"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+
+                <div class="align-i-ctr flex justify-c-sb">
+                  <button
+                    class="btn bg-brand bg-brand-dark-hover text-white border-r-0p2"
+                  >
+                    Log In
+                  </button>
+
+                  <a href="#" class="badge-btn mx-2 text-white">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge-count bg-brand">0</span>
+                  </a>
+
+                  <a href="#" class="badge-btn mr-1 text-white">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge-count bg-brand">0</span>
+                  </a>
+                </div>
+              </nav>
             </div>
 
-            <form
-              class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
-            >
-              <input
-                class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
-                type="text"
-                placeholder="search ..."
-              />
+            <pre class="pre-code">
+              <code class="language-html">      
+          &lt;div class="bg-brand-light nav-container">
+              &lt;nav class="align-i-ctr flex justify-c-sb py-1 px-2">
+                  &lt;div class="align-i-ctr flex justify-c-sb">
+                      &lt;img class="img-brand-logo" src="..." alt="..." />
+      
+                      &lt;a
+                      class="flex flex-direction-col ml-1"
+                      href="https://linkinsunil.github.io"
+                      target="_blank"
+                      >
+                      &lt;/a>
+                  &lt;/div>
+      
+                  &lt;form
+                      class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+                  >
+                      &lt;input
+                          class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+                          type="text"
+                          placeholder="search ..."
+                      />
+                      &lt;button
+                          class="bg-brand-dark-hover btn btn-primary-solid h-100pct mr-n1 py-0p5 px-1p5"
+                          type="submit"
+                      >
+                          &lt;i class="fas fa-search">&lt;/i>
+                      &lt;/button>
+                  &lt;/form>
+      
+                  &lt;div class="align-i-ctr flex justify-c-sb">
+                      &lt;button
+                          class="btn bg-brand bg-brand-dark-hover text-white border-r-0p2"
+                      >
+                          Log In
+                      &lt;/button>
+      
+                      &lt;a href="#" class="badge-btn mx-2 text-white">
+                          &lt;i class="fas fa-heart">&lt;/i>
+                          &lt;span class="badge-count bg-brand">0&lt;/span>
+                      &lt;/a>
+      
+                      &lt;a href="#" class="badge-btn mr-1 text-white translate-y">
+                          &lt;i class="fas fa-shopping-cart">&lt;/i>
+                          &lt;span class="badge-count bg-brand">0&lt;/span>
+                      &lt;/a>
+                  &lt;/div>
+              &lt;/nav>
+          &lt;/div>
+              </code>
+            </pre>
+          </div>
+        </section>
 
-              <button
-                class="bg-brand-dark-hover btn btn-primary-solid h-100pct mr-n1 py-0p5 px-1p5"
-                type="submit"
-              >
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+        <!-- Navigation Component Ends -->
 
-            <div class="align-i-ctr flex justify-c-sb">
-              <button
-                class="btn bg-brand bg-brand-dark-hover text-white border-r-0p2"
-              >
-                Log In
-              </button>
+        <section class="my-5p5 prev-next-page">
+          <div>
+            <a class="link" href="../Modal/modal.html">
+              <i class="far fa-arrow-alt-circle-left"></i> Modal
+            </a>
+          </div>
+          <div class="ml-auto">
+            <a class="link" href="../Rating/rating.html">
+              Rating <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+          </div>
+        </section>
+      </main>
 
-              <a href="#" class="badge-btn mx-2 text-white">
-                <i class="fas fa-heart"></i>
-                <span class="badge-count bg-brand">0</span>
-              </a>
+      <!-- Main Documentation Ends -->
 
-              <a href="#" class="badge-btn mr-1 text-white">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge-count bg-brand">0</span>
-              </a>
-            </div>
-          </nav>
+      <!-- Footer Starts -->
+
+      <footer>
+        <div>
+          <a class="link" href="modal.html">
+            <i class="far fa-arrow-alt-circle-left"></i> Modal
+          </a>
         </div>
-      </section>
+        <div class="ml-auto">
+          <a class="link" href="rating.html">
+            Rating <i class="far fa-arrow-alt-circle-right"></i>
+          </a>
+        </div>
+      </footer>
 
-      <!-- Navigation Component Ends -->
+      <!-- Footer Ends -->
+
+      <a class="link-to-top" href="#">
+        <button class="btn-floating"><i class="fas fa-arrow-up"></i></button
+      ></a>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <script src="../../js/main.js"></script>
   </body>
 </html>

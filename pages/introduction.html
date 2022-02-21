@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Czar-UI | Rating</title>
+    <title>Czar-UI | Introduction</title>
 
     <!-- favicon -->
     <link
@@ -41,10 +41,10 @@
     />
 
     <!-- czar-ui-components css -->
-    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 
     <!-- czar-ui-documentation css -->
-    <link rel="stylesheet" href="../../app.css" />
+    <link rel="stylesheet" href="../app.css" />
   </head>
   <body>
     <div class="container documentation m-auto p-2">
@@ -53,18 +53,18 @@
       <header class="header header-documentation">
         <img
           class="img-brand-logo"
-          src="../../assets/brand-logos/brand-logo.png"
+          src="../assets/brand-logos/brand-logo.png"
           alt="brand logo png"
         />
-        <!-- <a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
+        <!--<a class="link-brand mx-1" href="../../index.html">Czar-UI</a> -->
 
         <nav class="ml-auto">
           <ul>
             <li class="inline-block mx-1">
-              <a class="link" href="../../index.html">Home</a>
+              <a class="link" href="../index.html">Home</a>
             </li>
             <li class="inline-block mx-1">
-              <a class="link" href="../../pages/introduction.html">Docs</a>
+              <a class="link" href="introduction.html">Docs</a>
             </li>
             <li class="inline-block mx-1">
               <a
@@ -87,17 +87,19 @@
           <ul class="aside-left-list mb-3">
             <h3 class="my-1p5">Getting Started</h3>
             <li class="aside-link">
-              <a class="link" href="../../pages/introduction.html">About</a>
+              <a class="link link-active" href="/pages/introduction.html"
+                >About</a
+              >
             </li>
 
             <li class="aside-link">
-              <a class="link" href="../Typography/typography.html"
+              <a class="link" href="../components/Typography/typography.html"
                 >Typography</a
               >
             </li>
 
             <li class="aside-link">
-              <a class="link" href="../Grid-layout/Grid-layout.html"
+              <a class="link" href="../components/Grid-layout/Grid-layout.html"
                 >Grid Layout</a
               >
             </li>
@@ -106,44 +108,42 @@
           <ul class="aside-left-list mb-3">
             <h3 class="my-1p5">Components</h3>
             <li class="aside-link">
-              <a class="link" href="../Alert/alert.html">Alert</a>
+              <a class="link" href="../components/Alert/alert.html">Alert</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Avatar/avatar.html">Avatar</a>
+              <a class="link" href="../components/Avatar/avatar.html">Avatar</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Badge/badge.html">Badge</a>
+              <a class="link" href="../components/Badge/badge.html">Badge</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Button/button.html">Button</a>
+              <a class="link" href="../components/Button/button.html">Button</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Card/card.html">Card</a>
+              <a class="link" href="../components/Card/card.html">Card</a>
             </li>
             <li class="aside-link">
               <a class="link" href="../Image/image.html">Image</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Input/input.html">Input</a>
+              <a class="link" href="../components/Input/input.html">Input</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../List/list.html">List</a>
+              <a class="link" href="../components/List/list.html">List</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Modal/modal.html">Modal</a>
+              <a class="link" href="../components/Modal/modal.html">Modal</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Navigation/navigation.html"
+              <a class="link" href="../components/Navigation/navigation.html"
                 >Navigation</a
               >
             </li>
             <li class="aside-link">
-              <a class="link link-active" href="../Rating/rating.html"
-                >Rating</a
-              >
+              <a class="link" href="../components/Rating/rating.html">Rating</a>
             </li>
             <li class="aside-link">
-              <a class="link" href="../Toast/toast.html">Toast</a>
+              <a class="link" href="../components/Toast/toast.html">Toast</a>
             </li>
           </ul>
         </nav>
@@ -154,49 +154,71 @@
       <!-- Main Documentation Starts -->
 
       <main class="main-documentation">
-        <h1 class="mb-3">Rating</h1>
+        <h1 class="mb-3">About</h1>
         <p class="main-text">
-          Rating components are used to show ratings on the product card, user
-          reviews etc.
+          Czar-UI is HTML5 and CSS3 only library. Use it to build layouts and
+          components. To know more about it, visit
+          <a
+            href="https://github.com/linkinsunil/czar-ui-components/tree/dev"
+            target="_blank"
+          >
+            <span class="link intro-github">here</span>.
+          </a>
         </p>
 
-        <!-- Rating Starts -->
+        <section class="my-2 section-component" id="quick-start">
+          <article class="my-2">
+            <h3>CSS</h3>
 
-        <section class="my-2 section-component" id="filled-rating">
-          <h2 class="my-2">Rating</h2>
+            <p class="my-2 section-text">
+              Copy-paste the stylesheet
+              <code class="language-html hljs language-xml">&lt;link></code>
+              into your
+              <code class="language-html hljs language-xml">&lt;head></code>
+              before all other stylesheets to load Czar-UI's CSS and get
+              started.
+            </p>
 
-          <div class="component-container pt-2">
-            <div>
-              <span class="rating-star filled"> &#9733; </span>
-              <span class="rating-star filled"> &#9733; </span>
-              <span class="rating-star filled"> &#9733; </span>
-              <span class="rating-star filled"> &#9733; </span>
-              <span class="rating-star"> &#9733; </span>
+            <div class="component-container">
+              <pre class="pre-code intro-pre">
+                <code class="language-html">
+            &lt;link
+              rel="stylesheet"
+              href="../../css/main.css"
+            />          
+                </code>
+              </pre>
             </div>
+          </article>
 
-            <pre class="pre-code">
-              <code class="language-html">
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star filled"> &amp;#9733; &lt;/span>
-          &lt;span class="rating-star"> &amp;#9733; &lt;/span>
-              </code>
-            </pre>
-          </div>
+          <article class="my-2">
+            <h3>JS</h3>
+
+            <p class="my-2 section-text">
+              For proper functioning of some JS based components like Toast,
+              copy-paste the following
+              <code class="language-html hljs language-xml">&lt;script></code>
+              above the closing
+              <code class="language-html hljs language-xml">&lt;/body></code>
+              tag.
+            </p>
+
+            <div class="component-container">
+              <pre class="pre-code intro-pre">
+                <code class="language-html">
+            &lt;script 
+                src="../../js/main.js">
+            &lt;/script>          
+                </code>
+              </pre>
+            </div>
+          </article>
         </section>
 
-        <!-- Rating Ends -->
-
         <section class="my-5p5 prev-next-page">
-          <div>
-            <a class="link" href="../Navigation/navigation.html">
-              <i class="far fa-arrow-alt-circle-left"></i> Navigation
-            </a>
-          </div>
           <div class="ml-auto">
-            <a class="link" href="../Toast/toast.html">
-              Toast <i class="far fa-arrow-alt-circle-right"></i>
+            <a class="link" href="../components/Typography/typography.html">
+              Typography <i class="far fa-arrow-alt-circle-right"></i>
             </a>
           </div>
         </section>
@@ -207,14 +229,9 @@
       <!-- Footer Starts -->
 
       <footer>
-        <div>
-          <a class="link" href="navigation.html">
-            <i class="far fa-arrow-alt-circle-left"></i> Navigation
-          </a>
-        </div>
         <div class="ml-auto">
-          <a class="link" href="toast.html">
-            Toast <i class="far fa-arrow-alt-circle-right"></i>
+          <a class="link" href="typography.html">
+            Typography <i class="far fa-arrow-alt-circle-right"></i>
           </a>
         </div>
       </footer>
@@ -230,7 +247,5 @@
     <script>
       hljs.highlightAll();
     </script>
-    js/main.js
-    <script src="../../js/main.js"></script>
   </body>
 </html>
