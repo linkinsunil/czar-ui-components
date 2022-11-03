@@ -1,0 +1,20 @@
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid rgb(71, 71, 71);
+}
+.grid-col-2 div {
+  text-align: center;
+  border: 6px solid gray;
+  padding: 1rem;
+}
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid rgb(71, 71, 71);
+}
+.grid-col-3 div {
+  text-align: center;
+  border: 6px solid gray;
+  padding: 1rem;
+}

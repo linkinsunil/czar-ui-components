@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/style/docs.css" />
+  <script src="./scripts/docs_nav.js" defer></script>
+  <link rel="stylesheet" href="./style/components/component.css" />
+  <script src="./scripts/componentScript.js" defer></script>
+  <title>Documentation</title>
+</head>
+
+<body>
+  <nav class="docx-nav">
+    <div class="brand-div">
+      <i class="fas fa-bars menu-logo"></i>
+      <a href="/index.html">
+        <i class="fab fa-pied-piper brand-logo"></i>
+        <h1 class="brand-name">czar</h1>
+        <span class="version-sm">v1.0</span>
+      </a>
+    </div>
+    <div class="nav-icons">
+      <a href="https://github.com/linkinsunil" target="_blank">
+        <i class="fab fa-github icon"></i>
+      </a>
+      <a href="https://twitter.com/officialskv" target="_blank">
+        <i class="fab fa-twitter icon"></i></a>
+      <a href="https://www.linkedin.com/in/linkinsunil/" target="_blank">
+        <i class="fab fa-linkedin icon"></i>
+      </a>
+    </div>
+  </nav>
+  <main class="docx-layout">
+    <!-----Side Bar ----->
+    <div class="docx-sidebar">
+      <div class="nested-list1">
+        <h2 class="list-topic">Get Started</h2>
+        <ul class="list-subtopic">
+          <li>
+            <i class="fas fa-book-open"></i>
+            <a href="#introduction"> Introduction </a>
+          </li>
+          <li>
+            <i class="fas fa-font"></i>
+            <a href="#introduction">Typography</a>
+          </li>
+          <li>
+            <i class="fas fa-palette"></i>
+            <a href="#introduction"> Colors </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nested-list2">
+        <h2 class="list-topic">Components</h2>
+        <ul class="list-subtopic">
+          <li>
+            <i class="fas fa-user-tag"></i>
+            <a href="#avatar">Avatar</a>
+          </li>
+          <li>
+            <i class="fas fa-bell"></i>
+            <a href="#alert">Alert</a>
+          </li>
+          <li>
+            <i class="fas fa-toggle-on"></i>
+            <a href="#button">Button</a>
+          </li>
+          <li>
+            <i class="fas fa-certificate"></i>
+            <a href="#badges">Badges</a>
+          </li>
+          <li>
+            <i class="fas fa-id-card-alt"></i>
+            <a href="#card">Cards</a>
+          </li>
+          <li>
+            <i class="fas fa-images"></i>
+            <a href="#img">Image</a>
+          </li>
+          <li>
+            <i class="fas fa-keyboard"></i>
+            <a href="#chips">Input</a>
+          </li>
+          <li>
+            <i class="fas fa-sticky-note"></i>
+            <a href="#snackbar">SnackBar</a>
+          </li>
+          <li>
+            <i class="fas fa-bars"></i>
+            <a href="#list">List</a>
+          </li>
+          <li>
+            <i class="fas fa-compass"></i>
+            <a href="#navigation">Navigation</a>
+          </li>
+          <li>
+            <i class="fas fa-th-large"></i>
+            <a href="#slider">Slider</a>
+          </li>
+          <li>
+            <i class="fas fa-comment-alt"></i>
+            <a href="#modal">Modal</a>
+          </li>
+          <li>
+            <i class="fas fa-star"></i>
+            <a href="#rating">Rating</a>
+          </li>
+          <li>
+            <i class="fas fa-grip-horizontal"></i>
+            <a href="#grid">Grid</a>
+          </li>
+          <li>
+            <i class="fas fa-heading"></i>
+            <a href="#text-utilities">Text utilities</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="docx-div">
+      <div class="docx-components">
+        <!------Introducation--------->
+        <section class="section" id="introduction">
+          <div class="component-title">Introducation to czar-ui</div>
+          <div class="component-detail">
+            Czar is an open source user interface library, which allows
+            devs to create nice and minimal styles and components, by using pre-defined classnames. Czar helps develop
+            sites and web-apps faster without you worrying much on functionality.
+          </div>
+          <hr />
+          <div class="component-subhead">Installation</div>
+          <div class="component-detail">
+            To get started with Czar in your project, copy the link given
+            below and paste it in the &lt;head&gt; tag of your html, above all
+            other style sheets.
+          </div>
+          <code>
+
+          </code>
+
+          <div class="component-subhead">Typography</div>
+          <div class="component-detail">
+            A Webpage must have a good looking, standard and readable font to
+            make it's content attractive to the end user.
+            <strong>Open Sans</strong> is the font property which is used by
+            Czar. The font weight
+            varies from 500 to 700 based on importance of the content and free
+            icons available on font awesome is used by Czar.
+          </div>
+
+          <hr />
+
+          <div class="component-subhead">Color Scheme</div>
+          <div class="component-detail">
+            Czar comes with pre-defined colors, which are consistent in the
+            overall design. The colors used are chosen on a generic basis,
+            which can be accessed by pre-defined classes.
+          </div>
+          <div class="component-subhead">Default Palette</div>
+
+          <!-----Color palette ----->
+
+          <div class="palette" id="color">
+            <div class="default">
+              Default
+              <span>#172B4D</span>
+            </div>
+            <div class="primary">
+              Primary
+              <span>#6366F1</span>
+            </div>
+            <div class="secondary">
+              Secondary
+              <span>#F3F4F6</span>
+            </div>
+            <div class="error">
+              Danger
+              <span>#F44336</span>
+            </div>
+            <div class="success">
+              Success
+              <span>#4CAF50</span>
+            </div>
+            <div class="warning">
+              Warning
+              <span>#FF9800</span>
+            </div>
+          </div>
+        </section>
+
+        <!----- Avatar component ----->
+        <section class="section">
+          <div class="component-title" id="avatar">Avatar</div>
+          <div class="component-detail">
+            Avatars are user
+            <span class="highlight-text"> profile pictures </span>, usually
+            found in circular shapes. Avatars can be used for 'container'
+            objects — projects, spaces, repositories, etcetera — to give them
+            a recognisable visual identity.
+          </div>
+
+          <img src="./assets/images/avatarImage/images.png" alt="default" class="avatar" />
+          <img src="./assets/images/avatarImage/officeman.jpg" alt="work-men" class="avatar" />
+          <img src="./assets/images/avatarImage/officewomen.png" alt="work-women" class="avatar" />
+          <code>
+
+          </code>
+
+          <div class="component-subhead">Avatar Round</div>
+
+          <img src="./assets/images/avatarImage/images.png" alt="default" class="avatar round" />
+          <img src="./assets/images/avatarImage/officeman.jpg" alt="men" class="avatar round" />
+          <img src="./assets/images/avatarImage/officewomen.png" alt="women" class="avatar round" />
+          <code>
+
+          </code>
+
+          <div class="component-subhead">Avatar Sizes</div>
+
+          <img src="./assets/images/avatarImage/images.png" alt="blank" class="avatar round sm" />
+          <img src="./assets/images/avatarImage/officeman.jpg" alt="men" class="avatar round" />
+          <img src="./assets/images/avatarImage/officewomen.png" alt="women" class="avatar round lg" />
+          <code>
+
+          </code>
+        </section>
+
+        <!-----Alert component ----->
+        <section class="section">
+          <div class="component-title" id="alert">Alert</div>
+          <div class="component-detail">
+            An alert displays a short, important message in a way that
+            attracts the user's attention without interrupting the user's
+            task.
+          </div>
+          <div class="component-subhead">Primary Alerts</div>
+
+          <div class="alert success">
+            <strong>Success</strong>! This is a Primary Success Alert!
+          </div>
+          <div class="alert error">
+            <strong>Error</strong>! This is a Primary Error Alert!
+          </div>
+          <div class="alert warning">
+            <strong>Warning</strong>! This is a Primary Warning Alert!
+          </div>
+          <div class="alert info">
+            <strong>Info</strong>! This is a Primary Info Alert!
+          </div>
+          <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L293-L304&style=vs2015&showCopy=on"></script>
+            </code>
+
+          <div class="component-subhead">Secondary Alerts</div>
+
+          <div class="alert outline-success">
+            <strong>Success</strong>! This is a Secondary Success Alert!
+          </div>
+          <div class="alert outline-error">
+            <strong>Error</strong>! This is a Secondary Error Alert!
+          </div>
+          <div class="alert outline-warning">
+            <strong>Warning</strong>! This is a Secondary Warning Alert!
+          </div>
+          <div class="alert outline-info">
+            <strong>Info</strong>! This is a Secondary Info Alert!
+          </div>
+          <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L311-L322&style=vs2015&showCopy=on"></script>
+            </code>
+        </section>
+
+        <!----Button component---->
+
+        <section class="section">
+          <div class="component-title" id="button">Button</div>
+          <div class="component-detail">
+            Buttons are the soul of an interactive Web Application. Buttons
+            allow users to take actions, and make choices, with a single tap.
+          </div>
+
+          <div class="component-subhead">Basic Button</div>
+
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <a href="http://" class="link">Link</a>
+          <button class="btn-icon"><i class="fas fa-trash"></i></button>
+          <code>
+
+            </code>
+
+          <div class="component-subhead">Animated Button</div>
+
+          <button class="btn btn-large">Large</button>
+          <button class="btn btn-animate-arrow">
+            <span class="span-arrow">Hover </span>
+          </button>
+          <button class="btn btn-loading">
+            <i class="fa fa-spinner fa-spin"></i>Loading
+          </button>
+          <code>
+
+            </code>
+        </section>
+
+        <!----badges component----->
+        <section class="section">
+          <div class="component-title" id="badges">badge</div>
+          <div class="component-detail">
+            Badges are small circles, positioned either at top-right or
+            bottom-right of the parent component. Badge can be used to display
+            numbers, online / offline status, depending on where they are
+            used.
+          </div>
+
+          <div class="badge-div">
+            <p>Text with basic badge</p>
+            <span class="txt-badge">5</span>
+          </div>
+
+          <div class="badge-div">
+            <button class="btn-badge">Action</button>
+            <span class="btn-icon-badge">8</span>
+          </div>
+
+          <div class="icon-badge-div">
+            <i class="fas fa-bell"></i>
+            <span class="icon-badge">2</span>
+          </div>
+
+          <div class="icon-badge-div">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="icon-badge">1</span>
+          </div>
+          <div class="avatar-badge-div">
+            <img src="./assets/images/avatarImage/officeman.jpg" alt="work-men" class="avatar round sm" />
+            <span class="icon-badge">8</span>
+          </div>
+          <code>
+
+            </code>
+        </section>
+
+        <!-----Card component----->
+
+        <section class="section">
+          <div class="component-title" id="card">Card</div>
+          <div class="component-detail">
+            Cards are surfaces that display content and actions on a single
+            topic. They should be easy to scan for relevant and actionable
+            information. Elements, like text and images, should be placed on
+            them in a way that clearly indicates hierarchy.
+          </div>
+
+          <div class="component-subhead">Basic Card</div>
+
+          <div class="card-container">
+            <img src="https://picsum.photos/380/240" alt="nature img" class="random-img" />
+            <div class="card-details">
+              <h3 class="card-title">Our Chaning Work</h3>
+              <p class="card-subtitle">by sunil</p>
+              <p class="card-text">
+                Visit ten places on our planet that are is smart undergoing
+                the biggest changes today.
+              </p>
+            </div>
+            <div class="card-options">
+              <button class="card-btn">READ</button>
+              <button class="card-btn">BOOKMARK</button>
+              <i class="far fa-heart card-icon"></i>
+              <i class="fas fa-share-alt card-icon"></i>
+              <i class="fas fa-ellipsis-v card-icon"></i>
+            </div>
+          </div>
+          <code>
+
+            </code>
+
+          <div class="component-subhead">Basic W/ Header</div>
+
+          <div class="card-container">
+            <h3 class="card-title mg-rl">Our Chaning Work</h3>
+            <p class="card-subtitle mg-rl">by sunil</p>
+            <img src="https://picsum.photos/380/240" alt="nature img" class="random-img" />
+            <p class="card-text mg-rl">
+              Visit ten places on our planet that are is smart undergoing the
+              biggest changes today.
+            </p>
+            <div class="card-options">
+              <button class="card-btn">READ</button>
+              <button class="card-btn">BOOKMARK</button>
+              <i class="far fa-heart card-icon"></i>
+              <i class="fas fa-share-alt card-icon"></i>
+              <i class="fas fa-ellipsis-v card-icon"></i>
+            </div>
+          </div>
+          <code>
+
+            </code>
+
+          <div class="component-subhead">Basic w/ Text over Media</div>
+
+          <div class="card-container">
+            <img src="https://picsum.photos/id/108/380/240" alt="nature img" class="random-img" />
+            <div class="card-details">
+              <div class="text-over-heading">
+                <h3 class="card-title">Our Chaning Work</h3>
+                <p class="card-subtitle">by sunil</p>
+              </div>
+              <p class="card-text">
+                Visit ten places on our planet that are is smart undergoing
+                the biggest changes today.
+              </p>
+            </div>
+            <div class="card-options">
+              <button class="card-btn">READ</button>
+              <button class="card-btn">BOOKMARK</button>
+              <i class="far fa-heart card-icon"></i>
+              <i class="fas fa-share-alt card-icon"></i>
+              <i class="fas fa-ellipsis-v card-icon"></i>
+            </div>
+          </div>
+          <code>
+
+            </code>
+
+          <div class="component-subhead">Horizontal Image and Text</div>
+
+          <div class="card-container">
+            <div class="flex-items">
+              <img src="https://picsum.photos/100/100" alt="nature img" class="random-img" />
+              <div class="card-details">
+                <h3 class="card-title">Our Chaning Work</h3>
+                <p class="card-subtitle">by sunil</p>
+              </div>
+            </div>
+            <div class="card-options">
+              <button class="card-btn">READ</button>
+              <button class="card-btn">BOOKMARK</button>
+              <i class="far fa-heart card-icon"></i>
+              <i class="fas fa-share-alt card-icon"></i>
+              <i class="fas fa-ellipsis-v card-icon"></i>
+            </div>
+          </div>
+          <code>
+
+            </code>
+
+          <div class="component-subhead">Product Card</div>
+          <div class="card-wrapper">
+            <div class="product-card">
+              <div class="product-img-div">
+                <img src="./assets/images/img-component/HRX-Yellow-Printed-Round-Neck-T-Shirt--1.webp" alt="tshirt"
+                  class="product-img" />
+              </div>
+              <div class="product-detail">
+                <div class="product-brand">
+                  HRX <i class="fa-solid fa-heart"></i>
+                </div>
+                <p class="product-info">Yellow Printed Round Neck</p>
+                <div class="product-price">
+                  <span>Rs. 799</span>
+                  <span>Rs. 999</span>
+                  <span>(40% OFF)</span>
+                </div>
+                <div class="product-size-div">
+                  <div class="product-size-title">Add size</div>
+                  <div class="product-size">
+                    <span>XS</span>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                  </div>
+                </div>
+              </div>
+              <button class="product-btn">ADD TO CART</button>
+            </div>
+          </div>
+          <code>
+
+            </code>
+        </section>
+
+        <!-----Image component ----->
+
+        <section class="section">
+          <div class="component-title" id="img">Image</div>
+          <div class="component-detail">
+            Responsive Image Components are used to dsiplay Images on
+            websites, which are screen responsive. They expand upto the width
+            of the container they are in.
+          </div>
+          <div class="component-subhead">Responsive Image</div>
+
+          <div class="flex-img">
+            <img src="./assets/images/img-component/nature.jpg" alt="nature-img" class="responsive-img"
+              loading="eager" />
+            <img src="./assets/images/img-component/nature.jpg" alt="nature" class="responsive-img round" />
+          </div>
+          <code>
+
+            </code>
+
+          <div class="component-subhead">Responsive Image W/ Animation</div>
+          <img src="./assets/images/img-component/nature.jpg" alt="nature" class="responsive animate-move-img" />
+          <code>
+
+            </code>
+        </section>
+
+        <!-----Input component ----->
+
+        <section class="section">
+          <div class="component-title" id="chips">Input</div>
+          <div class="component-detail">
+            Inputs are necessary for user interaction with the website. Inputs
+            are used to take information from the user, and then save the data
+            to the server, accordingly.
+          </div>
+          <div class="component-subhead">Basic Input</div>
+          <input type="text" class="input" placeholder="Username" />
+          <input type="text" class="input input-warning" placeholder="Password" />
+
+
+          <div class="component-subhead">Input W/ Chips</div>
+          <div class="chips-container">
+            <div class="chips">
+              <div class="chip">
+                <p>sunil</p>
+                <i class="fas fa-times-circle input-cross-icon"></i>
+              </div>
+              <div class="chip-bg">
+                <p>Primary</p>
+                <i class="fas fa-times-circle input-cross-icon"></i>
+              </div>
+              <div class="chip-border">
+                <p>Secondary</p>
+                <i class="fas fa-times-circle input-cross-icon"></i>
+              </div>
+            </div>
+            <input type="text" class="input-chip" placeholder="add items..." />
+          </div>
+          <!-- Use Script link for UI interactivity  -->
+          <code>
+
+            </code>
+        </section>
+
+        <!----- Snackbar component ----->
+
+        <section class="section">
+          <div class="component-title" id="snackbar">Snackbar</div>
+          <div class="component-detail">
+            <span class="highlight-text"> Snackbars/Toast </span> inform users
+            of a process that an app has performed or will perform. They
+            appear temporarily, towards the bottom of the screen. They
+            shouldn’t interrupt the user experience, and they don’t require
+            user input to disappear.
+          </div>
+
+          <div id="snackbar-top"></div>
+          <div id="snackbar-center"></div>
+
+          <button class="btn btn-secondary" onclick="showMessage('Thank you for Registration !')">
+            Basic Snackbar
+          </button>
+          <button class="btn btn-secondary" onclick='showMessageCenter("Cant send photos. Retry in 5 seconds")'>
+            Center Snackbar
+          </button>
+          <!-- Use Script link for UI interactivity  -->
+          <code>
+                          </code>
+        </section>
+
+        <!------ List component ------>
+
+        <section class="section">
+          <div class="component-title" id="list">List</div>
+          <div class="component-detail">
+            Lists are continuous, vertical display of text or images.
+          </div>
+          <div class="flex-head">
+            <div class="component-subhead">Ordered List</div>
+            <div class="component-subhead">Unordered List</div>
+          </div>
+
+          <div class="flex">
+            <div class="drawer">
+              <h2 class="drawer-title">Title</h2>
+              <p class="drawer-subtext">subtext</p>
+              <div class="drawer-nav">
+                <ol>
+                  <li class="drawer-links">
+                    <i class="fas fa-archive drawer-icon"></i>
+                    Inbox
+                  </li>
+                  <li class="drawer-links">
+                    <i class="fas fa-star drawer-icon"></i>
+                    Star
+                  </li>
+                  <li class="drawer-links">
+                    <i class="fas fa-paper-plane drawer-icon"></i>
+                    Sent Mail
+                  </li>
+                  <li class="drawer-links">
+                    <i class="fas fa-envelope-open drawer-icon"></i>
+                    Drafts
+                  </li>
+                </ol>
+              </div>
+              <!-- For unordered-list; just change <ol> </ol> to <ul> </ul>  -->
+            </div>
+
+            <div class="drawer">
+              <h2 class="drawer-title center">Title</h2>
+              <p class="drawer-subtext center">subtext</p>
+
+              <div class="drawer-nav">
+                <ul>
+                  <li class="drawer-side-links">
+                    Inbox
+                    <i class="fas fa-archive drawer-icon"></i>
+                  </li>
+                  <li class="drawer-side-links">
+                    Star
+                    <i class="fas fa-star drawer-icon"></i>
+                  </li>
+                  <li class="drawer-side-links">
+                    Sent Mail
+                    <i class="fas fa-paper-plane drawer-icon"></i>
+                  </li>
+                  <li class="drawer-side-links">
+                    Drafts
+                    <i class="fas fa-envelope-open drawer-icon"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <code>
+
+            </code>
+        </section>
+
+        <!-----Navigation component ----->
+        <section class="section">
+          <div class="component-title" id="navigation">Navigation Bar</div>
+          <div class="component-detail">
+            Having easy-to-use navigation is important for any web site, With
+            CSS you can transform boring HTML menus into good-looking
+            navigation bars.
+            <p class="highlight-text">
+              This Navigation bar is Responsive / W Hamburger and made for all
+              kind of device.
+            </p>
+          </div>
+
+          <nav class="navbar">
+            <div class="brand-title">Brand Name</div>
+            <i class="fas fa-bars toggle-button"></i>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Use Script link for hamburger toggle on mobile mode -->
+          <code>
+
+            </code>
+        </section>
+
+        <!----- slider component ----->
+
+        <section class="section">
+          <div class="component-title" id="slider">Slider</div>
+
+          <div class="component-detail">
+            Sliders allow users to make selections from a range of values.
+          </div>
+
+          <div class="options-dialog">
+            <h2 class="options-title">Options Title</h2>
+            <div class="option-div">
+              <input type="checkbox" id="input1" name="option" />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos modi nesciunt placeat reiciendis maiores
+                consectetur magnam ratione esse quae atque.
+              </p>
+            </div>
+            <div class="option-div">
+              <input type="checkbox" id="input1" name="option" />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos modi nesciunt placeat reiciendis maiores
+                consectetur magnam ratione esse quae atque.
+              </p>
+            </div>
+            <div class="option-div">
+              <input type="checkbox" id="input" name="option" />
+              <label class="input" for="input">Item 1</label>
+              <label class="input" for="input">Item 2</label>
+              <label class="input" for="input">Item 3</label>
+              <label class="input" for="input">Item 4</label>
+              <label class="input" for="input">Item 5</label>
+            </div>
+          </div>
+
+          <code>
+            </code>
+        </section>
+
+        <!-- Modal-popup -->
+
+        <section class="section">
+          <div class="component-title" id="modal">Modal</div>
+          <div class="component-detail">
+            A modal is a dialog
+            <span class="highlight-text">box/popup</span> window that is
+            displayed on top of the current page:
+          </div>
+
+          <button id="openModal" class="btn btn-primary">CLICK ME</button>
+
+          <div class="modal-container" id="modal_container">
+            <div class="modal">
+              <h1>Modals/popups are Awesome!</h1>
+              <p class="modal-text">
+                This is a modal box which is used in popping various important
+                informations depending on user requirement.
+              </p>
+              <button id="closeModal" class="btn btn-primary">OKAY</button>
+              <button id="closeModal" class="btn btn-danger">CANCEL</button>
+            </div>
+          </div>
+          <!-- Use Script link for modal occurrence  -->
+          <code>
+            </code>
+        </section>
+
+        <!-----Rating-component----->
+
+        <section class="section">
+          <div class="component-title" id="rating">Rating</div>
+          <div class="component-detail">
+            Rating components can be used as read-only badge or in reviews
+            section. Can be used in reviews section as form too.
+          </div>
+          <i class="fas fa-star rating-icon"></i>
+          <i class="fas fa-star rating-icon"></i>
+          <i class="fas fa-star rating-icon"></i>
+          <i class="fas fa-star rating-icon"></i>
+          <i class="fas fa-star rating-icon"></i>
+          <!-- Use Script link for toggle rating -->
+          <code>
+
+            </code>
+        </section>
+
+        <!-----Grid-component----->
+        <section class="section">
+          <div class="component-title" id="grid">Grid</div>
+          <div class="component-detail">
+            The CSS Grid Layout Module offers a grid-based layout system, with
+            rows and columns, making it easier to design web pages without
+            having to use floats and positioning.
+          </div>
+          <div class="component-subhead">grid-2: Two items in a grid</div>
+          <!-- Two items grid-->
+          <div class="grid-col-2">
+            <div>child 1</div>
+            <div>child 2</div>
+          </div>
+          <code>
+            </code>
+          <div class="component-subhead">grid-3: Two items in a grid</div>
+
+          <!-- Three items grid-->
+          <div class="grid-col-3">
+            <div>child 1</div>
+            <div>child 2</div>
+            <div>child 3</div>
+          </div>
+
+          <code>
+            </code>
+        </section>
+
+        <!-----Text utilities----->
+        <section class="section">
+          <div class="component-title" id="text-utilities">
+            Text utilities
+          </div>
+          <div class="component-detail">
+            Documentation and examples for common text utilities to control
+            alignment, wrapping, weight, and more.
+          </div>
+          <div class="component-subhead">Headings</div>
+          <div class="text-container">
+            <h1>H1 - Heading</h1>
+            <h2>H2 - Heading</h2>
+            <h3>H3 - Heading</h3>
+            <h4>H4 - Heading</h4>
+            <h5>H5 - Heading</h5>
+            <h6>H6 - Heading</h6>
+          </div>
+          <code>
+            </code>
+          <div class="component-subhead">Text sizes</div>
+          <div class="text-container">
+            <p class="txt-sm">This is small text.</p>
+            <p class="txt-md">This is medium text.</p>
+            <p class="txt-lg">This is large text.</p>
+            <p class="txt-xl">This is extra large text.</p>
+          </div>
+          <code>
+            </code>
+          <div class="component-subhead">Text alignment</div>
+          <div class="text-container">
+            <p class="txt-start">Text alignment start</p>
+            <p class="txt-center">Text alignment center</p>
+            <p class="txt-end">Text alignment end</p>
+          </div>
+
+          <code>
+            </code>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

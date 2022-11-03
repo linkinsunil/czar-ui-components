@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Chivo:wght@900&family=Dongle&family=Inter&family=Lato:wght@700&family=Montserrat:wght@100;500&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Oswald:wght@300&family=Poppins&family=Prompt:wght@200&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap");
+
+:root {
+  --primary-color: #fff;
+  /* --highlight-color: #94849b; */
+  --highlight-color: #a493ac;
+  /* --highlight-color: #4fd1c5; */
+  --secondary-color: #747572;
+
+  --background-color: #1a202c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  /* font-family: "Roboto", sans-serif; */
+
+  font-family: "Open Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  color: black;
+}
+/* -------------Navigation-------- */
+
+.docx-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 2rem 0.5rem 4.6rem;
+  margin: 0 auto;
+
+  border-bottom: 1px solid var(--highlight-color);
+  /* backdrop-filter: blur(3px); */
+  background-color: white;
+
+  /*for fixed nav  */
+
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.brand-name {
+  display: inline-block;
+}
+.brand-logo {
+  font-size: 1.8rem;
+  color: #a493ac;
+  /* color: #9681a0; */
+}
+.version-sm {
+  font-size: 0.8rem;
+  color: rgb(90, 90, 90);
+}
+.nav-icons {
+  font-size: 1.3rem;
+}
+.icon {
+  padding: 0rem 0.5rem;
+  color: var(--secondary-color);
+}
+
+/* main  */
+.docx-layout {
+  display: flex;
+  /* gap: 2rem; */
+}
+
+/* hamburger */
+
+.menu-logo {
+  font-size: 1.7rem;
+  color: #9681a0;
+  margin-right: 8px;
+  display: none;
+  cursor: pointer;
+}
+/* showing sideBar */
+.docx-sidebar.show {
+  transform: translateX(0);
+}
+
+/* ---------------sidebar------------------ */
+
+.docx-sidebar {
+  padding: 1.8rem 1rem;
+  padding-left: 4.5rem;
+  width: 40%;
+  min-width: 17rem;
+
+  /* --sidebar scroll and fixed-- */
+  position: sticky;
+  height: calc(100vh - 3.125rem);
+  overflow-y: auto;
+  top: 3.2rem;
+  transition: all 0.9s;
+}
+
+.list-topic {
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(209, 206, 206);
+}
+.list-subtopic li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.list-subtopic li i {
+  color: var(--highlight-color);
+  font-size: 0.8rem;
+}
+.list-subtopic li a {
+  color: var(--secondary-color);
+}
+
+.fa-bell {
+  margin-left: 0 !important;
+}
+/*-------------------- main components documentation--------------------- */
+
+.docx-div {
+  min-width: 0;
+}
+
+.docx-components {
+  margin-left: 1.5rem;
+}
+
+.section {
+  position: relative;
+  padding: 1rem 6rem 5rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px var(--highlight-color);
+}
+.component-title {
+  position: absolute;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+
+  top: -28px;
+  left: 5%;
+  z-index: 0;
+}
+
+.component-subhead {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.component-detail {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-text {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+code {
+  margin-bottom: 2.5rem;
+}
+/*-----------------------color pallet--------------------------- */
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.palette > div {
+  width: 120px;
+  height: 120px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.default {
+  background-color: #f3f3f5;
+  color: black !important;
+}
+.primary {
+  background-color: #6366f1;
+}
+.secondary {
+  background-color: #929394;
+}
+.error {
+  background-color: #f44336;
+}
+.success {
+  background-color: #4caf50;
+}
+.warning {
+  background-color: #ff9800;
+}
+
+.img-example {
+  width: 10rem;
+  height: 20vh;
+}
+
+/* mini-Laptops and tabs */
+@media (max-width: 1071px) {
+  html {
+    font-size: 90%;
+  }
+  .docx-nav {
+    font-size: 100%;
+    padding-left: 2.9rem;
+  }
+  .docx-sidebar {
+    padding-left: 3rem;
+  }
+  .section {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .brand-logo {
+    display: none;
+  }
+  .menu-logo {
+    display: inline;
+  }
+  .docx-sidebar {
+    font-size: 130%;
+    /* hiding sidebar */
+    transform: translateX(-400px);
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    width: 35%;
+    top: 3rem;
+  }
+  .docx-nav {
+    background-color: white;
+    font-size: 150%;
+  }
+  .docx-components {
+    margin-left: 3rem;
+  }
+  .menu-logo {
+    margin-left: 0.4rem;
+  }
+
+  .component-title {
+    position: static;
+  }
+
+  .section {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+/* large && medium size  */
+@media (max-width: 700px) {
+  .docx-sidebar {
+    font-size: 120%;
+    width: 45%;
+    padding-left: 3.1rem;
+    height: 100vh;
+  }
+  .section {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  .icon,
+  .menu-logo {
+    font-size: 130%;
+  }
+}
+
+/*----- for smallest devices -----*/
+@media (max-width: 400px) {
+  html {
+    font-size: 80%;
+  }
+  .docx-sidebar {
+    font-size: 130%;
+    width: 55%;
+    padding-left: 1.5rem;
+  }
+  .section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .docx-components {
+    margin-left: 1rem !important;
+  }
+  .section {
+    margin-right: 1rem !important;
+  }
+  .menu-logo {
+    margin-left: 0;
+  }
+  .docx-nav {
+    padding-left: 1.5rem;
+  }
+  .version-sm {
+    display: none;
+  }
+}

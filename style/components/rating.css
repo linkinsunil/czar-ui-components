@@ -1,0 +1,8 @@
+.rating-icon {
+  font-size: 1.5rem;
+  color: gray;
+  cursor: pointer;
+}
+.rating-done {
+  color: #ffb400;
+}

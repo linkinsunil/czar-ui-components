@@ -1,0 +1,29 @@
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgb(212, 209, 209);
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.sm {
+  width: 50px;
+  height: 50px;
+}
+.sm-icon {
+  width: 60px;
+  height: 30px;
+}
+
+.lg {
+  width: 110px;
+  height: 110px;
+}
+
+.xl {
+  width: 150px;
+  height: 150px;
+}

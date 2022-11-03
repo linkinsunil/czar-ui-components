@@ -1,0 +1,40 @@
+.alert {
+  /* width: 50%; */
+  max-width: 80%;
+  /* width: fit-content; */
+  padding: 0.7rem;
+  margin-bottom: 0.4rem;
+  color: white;
+}
+
+.success {
+  background-color: #22c55e;
+}
+
+.error {
+  background-color: #ef4444;
+}
+.warning {
+  background-color: #fbbf24;
+}
+.info {
+  background-color: #cacac9;
+}
+
+.outline-success {
+  border: 2px solid #22c55e;
+  color: black;
+}
+
+.outline-error {
+  border: 2px solid #ef4444;
+  color: black;
+}
+.outline-warning {
+  border: 2px solid #fbbf24;
+  color: black;
+}
+.outline-info {
+  border: 2px solid #cacac9;
+  color: black;
+}

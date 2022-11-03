@@ -1,0 +1,36 @@
+#snackbar-top {
+  background: rgb(54, 54, 54);
+  color: white;
+  padding: 15px;
+  display: inline-block;
+
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  transform: translateX(300px);
+  transition: all 500ms;
+  z-index: 9999;
+}
+
+#snackbar-center {
+  font-size: 90%;
+  background: rgb(54, 54, 54);
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+
+  position: fixed;
+  bottom: 70px;
+  left: 550px;
+  transform: translateY(200px);
+  transition: all 500ms;
+  border-radius: 5px;
+  z-index: 9999;
+}
+#snackbar-top.show {
+  transform: translateY(0);
+}
+
+#snackbar-center.showCenter {
+  transform: translateY(0);
+}

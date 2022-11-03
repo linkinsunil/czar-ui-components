@@ -1,0 +1,112 @@
+.badge-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 12rem;
+  border-bottom: 1px solid rgb(156, 156, 156);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.txt-badge {
+  background-color: #0d8dc9;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -8%;
+  right: -2%;
+  color: white;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.btn-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* position: absolute; */
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: hsl(263, 70%, 50%);
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 550;
+  box-shadow: 0px 0px 4px 0px #888888;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-badge:hover {
+  background-color: hsl(263, 75%, 55%);
+}
+
+.btn-icon-badge {
+  background-color: #ec4899;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: 45px;
+  color: white;
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.icon-badge-div {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-left: 2rem;
+  /* margin-top: 0.5rem; */
+  margin-right: 1rem;
+  background-color: rgb(233, 232, 232);
+  border-bottom: 1px solid rgb(156, 156, 156);
+  border-radius: 50%;
+}
+
+.avatar-badge-div {
+  display: inline-block;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.icon-badge-div .fa-bell {
+  position: relative;
+  left: 24%;
+  top: 20%;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  /* margin-left: 0.3rem; */
+}
+
+.icon-badge {
+  background-color: #ef4444;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: -16%;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.fa-shopping-cart {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  left: 16%;
+  top: 20%;
+}
