@@ -55,7 +55,7 @@
 	<g>
 		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="172.3255" y1="178.4396" x2="190.0203" y2="114.214">
 			<stop  offset="0" style="stop-color:#3D96D2"/>
-			<stop  offset="1" style="stop-color:#069FB0"/>
+			<stop  offset="1" style="stop-color:#ddbb0d"/>
 		</linearGradient>
 		<polygon class="st5" points="186.2,180.6 175.7,180.6 175.7,113.7 180.9,100.8 186.2,113.7 		"/>
 	</g>
