@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Chivo:wght@900&family=Dongle&family=Inter&family=Lato:wght@700&family=Montserrat:wght@100&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Oswald:wght@300&family=Poppins&family=Prompt:wght@200&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Chivo:wght@900&family=Dongle&family=Inter&family=Lato:wght@700&family=Montserrat:wght@100&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Oswald:wght@300&family=Poppins&family=Prompt:wght@200&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap');
 
 :root {
   --primary-color: #fff;
-  /* --highlight-color: #94849b; */
-  --highlight-color: #a493ac;
-  /* --highlight-color: #4fd1c5; */
+  --highlight-color: #ddbb0d;
   --secondary-color: #747572;
 
   --background-color: #1a202c;
@@ -40,7 +38,7 @@ a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* ---Header--- */
@@ -76,8 +74,6 @@ body {
 .brand-name {
   color: var(--primary-color);
   font-size: 3.5rem;
-  /* display: none; */
-  /* border: 1px solid pink; */
 }
 .brand-logo {
   color: var(--highlight-color);
@@ -96,7 +92,7 @@ body {
 .hero-title {
   font-size: 4rem;
   color: var(--primary-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* font-family: "Open Sans", sans-serif; */
 
   margin-left: 2rem;
@@ -150,7 +146,7 @@ body {
   padding-right: 2rem;
   text-align: center;
   margin-top: 2rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .feat-head {
   font-size: 2.7rem;
@@ -165,7 +161,7 @@ body {
   font-weight: 550;
 
   border-radius: 1rem;
-  background-color: #fdf4ff;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 .feat-img {
@@ -184,40 +180,6 @@ body {
 }
 .feat-div {
   margin-bottom: 1rem;
-}
-
-/* ---Brand Section--- */
-
-.brand-section {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.brand-imgs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: space-evenly;
-}
-.brand-img {
-  max-width: 8rem;
-  height: auto;
-}
-.dotted-line {
-  border-top: 1px dashed var(--background-color);
-  margin-left: 3rem;
-  margin-right: 3rem;
-  opacity: 0.5;
-}
-.brand-spons {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  text-align: center;
-
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-}
-.brand-spons span {
-  color: var(--highlight-color);
 }
 
 /* ---Footer--- */

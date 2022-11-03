@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Chivo:wght@900&family=Dongle&family=Inter&family=Lato:wght@700&family=Montserrat:wght@100;500&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Oswald:wght@300&family=Poppins&family=Prompt:wght@200&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Chivo:wght@900&family=Dongle&family=Inter&family=Lato:wght@700&family=Montserrat:wght@100;500&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Oswald:wght@300&family=Poppins&family=Prompt:wght@200&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap');
 
 :root {
   --primary-color: #fff;
-  /* --highlight-color: #94849b; */
-  --highlight-color: #a493ac;
-  /* --highlight-color: #4fd1c5; */
+  --highlight-color: #ddbb0d;
   --secondary-color: #747572;
 
   --background-color: #1a202c;
@@ -24,7 +22,7 @@ html {
   font-size: 100%;
   /* font-family: "Roboto", sans-serif; */
 
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 ol,
 ul {
@@ -57,8 +55,7 @@ a {
 }
 .brand-logo {
   font-size: 1.8rem;
-  color: #a493ac;
-  /* color: #9681a0; */
+  color: var(--highlight-color);
 }
 .version-sm {
   font-size: 0.8rem;
@@ -69,7 +66,7 @@ a {
 }
 .icon {
   padding: 0rem 0.5rem;
-  color: var(--secondary-color);
+  color: var(--highlight-color);
 }
 
 /* main  */
@@ -82,7 +79,7 @@ a {
 
 .menu-logo {
   font-size: 1.7rem;
-  color: #9681a0;
+  color: var(--highlight-color);
   margin-right: 8px;
   display: none;
   cursor: pointer;
