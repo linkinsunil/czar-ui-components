@@ -103,13 +103,14 @@ body {
 }
 .hero-detail {
   font-size: 2rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  letter-spacing: 0.3rem;
 }
 .start-btn {
   font-size: 2rem;
@@ -123,6 +124,7 @@ body {
   cursor: pointer;
   border: none;
 }
+
 .git-btn {
   font-size: 2rem;
   color: #fff;
@@ -200,7 +202,7 @@ body {
 }
 .note {
   font-size: 0.6rem;
-  text-align: left;
+  text-align: center;
 }
 
 /* ---BigScreen Media--- */
